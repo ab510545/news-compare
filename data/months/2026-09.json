@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "month": "2026-09",
+  "days": {
+    "2026-09-24": {
+      "status": "ok",
+      "articles": 692,
+      "countries": 12,
+      "feeds_ok": 26,
+      "feeds_total": 27,
+      "generated_at": "2026-09-24T07:20:00Z",
+      "alerts": [
+        {
+          "feed_id": "ru-rt",
+          "source": "RT",
+          "status": "failed",
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 2,
+          "note": "取得に失敗しました: URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+        }
+      ]
+    }
+  },
+  "updated_at": "2026-09-24T07:21:25Z"
+}
