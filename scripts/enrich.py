@@ -619,17 +619,27 @@ def model_supports_thinking_off(model):
     return "2.5" in name and "pro" not in name
 
 
+# 思考レベル minimal に「非対応」のモデル（公式「思考」ページの表、2026-09-24 確認）。
+#   gemini-3.8-flash / 3.7-flash: 低・中・高のみ（minimal を送ると 400 INVALID_ARGUMENT）
+#   gemini-3.1-pro / 3-pro 系: 低・高のみ
+#   この表に無い 3.x（3.5-flash-lite / 3.5-flash / 3.6-flash / 3.1-flash-lite 等）は minimal 可。
+NO_MINIMAL_THINKING_PREFIXES = ("gemini-3.8-flash", "gemini-3.7-flash")
+
+
 def thinking_config(model):
     """モデルに合わせた「思考を最小にする」設定。付けないほうがよい場合は None。
 
     - 3.x Flash / Flash-Lite: thinkingLevel=minimal（公式:「ほとんどのクエリで思考なしと一致」）
-    - 3.x Pro: minimal 非対応なので low
+    - minimal 非対応のモデル（3.8/3.7 Flash、3.x Pro）: low
     - 2.5 Flash / Flash-Lite: thinkingBudget=0
     それでも 400 で拒否されたら、call_batch がこの設定を外して1回だけ送り直す。
     """
     if is_gemini3(model):
-        level = "low" if "pro" in (model or "").lower() else "minimal"
-        return {"thinkingLevel": level}
+        name = (model or "").lower()
+        if name.startswith("models/"):
+            name = name[len("models/"):]
+        no_minimal = "pro" in name or any(name.startswith(p) for p in NO_MINIMAL_THINKING_PREFIXES)
+        return {"thinkingLevel": "low" if no_minimal else "minimal"}
     if model_supports_thinking_off(model):
         return {"thinkingBudget": 0}
     return None
