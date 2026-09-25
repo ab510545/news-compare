@@ -768,12 +768,14 @@ def check_freshness(records, feed, now=None):
     result = {
         "feed_id": feed["feed_id"],
         "source": feed["source"],
+        "country": feed["country"],
         "rss_url": feed["rss_url"],
         "articles": len(records),
         "latest_published_at": None,
         "stale_days": None,
         "threshold_days": threshold,
         "status": STATUS_OK,
+        "error": None,
         "note": "",
     }
 
@@ -808,17 +810,19 @@ def check_freshness(records, feed, now=None):
 
 
 def failed_status(feed, error):
-    """取得そのものが失敗したときの状態レコード。check_freshness と同じ形に揃える。"""
+    """取得失敗を日次メタデータへ残す。次回成功時は通常のok状態へ戻る。"""
     return {
         "feed_id": feed["feed_id"],
         "source": feed["source"],
+        "country": feed["country"],
         "rss_url": feed["rss_url"],
         "articles": 0,
         "latest_published_at": None,
         "stale_days": None,
         "threshold_days": int(feed.get("stale_after_days", DEFAULT_STALE_AFTER_DAYS)),
         "status": STATUS_FAILED,
-        "note": "取得に失敗しました: %s" % error,
+        "error": str(error),
+        "note": "取得失敗・今回の取得対象外: %s" % error,
     }
 
 
@@ -1135,7 +1139,9 @@ def build_day_meta(day_document):
             {
                 "feed_id": s["feed_id"],
                 "source": s["source"],
+                "country": s.get("country"),
                 "status": s["status"],
+                "error": s.get("error"),
                 "latest_published_at": s["latest_published_at"],
                 "stale_days": s["stale_days"],
                 "threshold_days": s["threshold_days"],
