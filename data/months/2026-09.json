@@ -69,11 +69,11 @@
     },
     "2026-09-26": {
       "status": "ok",
-      "articles": 2873,
+      "articles": 3163,
       "countries": 33,
-      "feeds_ok": 109,
+      "feeds_ok": 107,
       "feeds_total": 113,
-      "generated_at": "2026-09-25T15:18:16Z",
+      "generated_at": "2026-09-25T15:55:01Z",
       "alerts": [
         {
           "feed_id": "cl-elsiglo",
@@ -85,6 +85,17 @@
           "stale_days": null,
           "threshold_days": 3,
           "note": "取得失敗・今回の取得対象外: URLError: <urlopen error timed out>"
+        },
+        {
+          "feed_id": "et-reporter",
+          "source": "The Reporter Ethiopia",
+          "country": "ET",
+          "status": "failed",
+          "error": "HTTPError: HTTP Error 202: unexpected status",
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 3,
+          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 202: unexpected status"
         },
         {
           "feed_id": "id-cnnindonesia",
@@ -118,9 +129,20 @@
           "stale_days": null,
           "threshold_days": 3,
           "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "feed_id": "ve-ultimasnoticias",
+          "source": "Últimas Noticias",
+          "country": "VE",
+          "status": "failed",
+          "error": "HTTPError: HTTP Error 202: unexpected status",
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 3,
+          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 202: unexpected status"
         }
       ]
     }
   },
-  "updated_at": "2026-09-25T15:24:03Z"
+  "updated_at": "2026-09-25T16:01:32Z"
 }

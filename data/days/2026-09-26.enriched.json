@@ -1,54 +1,157 @@
 {
   "schema_version": 3,
   "date": "2026-09-26",
-  "generated_at": "2026-09-25T15:38:14Z",
-  "engine": "passthrough",
+  "generated_at": "2026-09-25T16:21:05Z",
+  "engine": "gemini-3.1-flash-lite",
   "api_calls": 34,
-  "degraded": true,
+  "degraded": false,
   "articles": [
     {
-      "article_id": "8516b894",
-      "title_ja": "Dette du Sénégal : les banques régionales peuvent-elles éviter la restructuration de leurs créances ?",
-      "summary_ja": "",
-      "tags": [],
+      "article_id": "28f959cd",
+      "title_ja": "マドランガ委員会：タクシー会社幹部の診断書は受理されず、月曜日に「イジンカビ」に関する証拠が審理される",
+      "summary_ja": "タクシー会社幹部の診断書が却下された。委員会で「イジンカビ」に関する証拠が審理される。",
+      "tags": [
+        "社会"
+      ],
       "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Dette du Sénégal : les banques régionales peuvent-elles éviter la restructuration de leurs créances ?",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
+      "stance_reason": "委員会での手続きの進展を事実として報じているため。",
+      "key_phrase_original": "izinkabi",
+      "key_phrase_ja": "イジンカビ（殺し屋集団）",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "8516b894",
+      "title_ja": "セネガルの債務：地域銀行は債権の再編を回避できるか？",
+      "summary_ja": "セネガルの債務問題に関し、地域銀行が債権再編を避けられるかが問われている。",
+      "tags": [
+        "経済"
+      ],
+      "stance": "neutral",
+      "stance_reason": "債務再編の可能性について中立的な問いかけを行っているため。",
+      "key_phrase_original": "restructuration",
+      "key_phrase_ja": "再編",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "b8bb9979",
+      "title_ja": "ウクライナ最大の製鉄所が操業停止、ロシアの攻撃によりキーウで7人が死亡",
+      "summary_ja": "ウクライナの製鉄所が操業を停止した。ロシアの攻撃でキーウにて7人が死亡した。",
+      "tags": [
+        "安全保障",
+        "社会"
+      ],
+      "stance": "neutral",
+      "stance_reason": "製鉄所の停止と攻撃による死者という事実を伝えているため。",
+      "key_phrase_original": "أكبر شركة للصلب",
+      "key_phrase_ja": "最大の製鉄会社",
+      "enriched_by": "gemini"
     },
     {
       "article_id": "4587f205",
-      "title_ja": "بين سوريا وحزب الله جبل من الشك والهواجس",
-      "summary_ja": "",
-      "tags": [],
+      "title_ja": "シリアとヒズボラの間に横たわる疑念と懸念の山",
+      "summary_ja": "シリアとヒズボラの間に、疑念や懸念が存在している。",
+      "tags": [
+        "政治",
+        "外交"
+      ],
       "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "بين سوريا وحزب الله جبل من الشك والهواجس",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
+      "stance_reason": "両者の関係性について客観的な分析的表現をとっているため。",
+      "key_phrase_original": "جبل من الشك والهواجس",
+      "key_phrase_ja": "疑念と懸念の山",
+      "enriched_by": "gemini"
     },
     {
       "article_id": "495f0146",
-      "title_ja": "الخطوط القطرية تسحب أسطول إيرباص A330 القديم وتعير طيارين لرواند إير",
-      "summary_ja": "",
-      "tags": [],
+      "title_ja": "カタール航空、旧型のエアバスA330を退役させ、ルワンダ航空にパイロットを貸し出し",
+      "summary_ja": "カタール航空が旧型のエアバスA330を運用から外した。同社はルワンダ航空へパイロットを派遣している。",
+      "tags": [
+        "経済"
+      ],
       "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "الخطوط القطرية تسحب أسطول إيرباص A330 القديم وتعير طيارين لرواند إير",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
+      "stance_reason": "航空会社の機材変更と人事協力という事実を報じているため。",
+      "key_phrase_original": "الخطوط القطرية",
+      "key_phrase_ja": "カタール航空",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "d6394258",
+      "title_ja": "マンチェスター・シティ、財政規則違反で有罪判決、罰則を待つ",
+      "summary_ja": "マンチェスター・シティが財政規則違反で有罪と判定された。現在、科される罰則の発表を待っている。",
+      "tags": [
+        "スポーツ"
+      ],
+      "stance": "neutral",
+      "stance_reason": "判決結果という事実を伝えているため。",
+      "key_phrase_original": "kršenje finansijskih pravila",
+      "key_phrase_ja": "財政規則違反",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "9568f6ef",
+      "title_ja": "脅迫や迫害から「自由の征服」賞まで：ソフィヤ・トドロヴィッチとは誰か？",
+      "summary_ja": "ソフィヤ・トドロヴィッチが「自由の征服」賞を受賞した。過去に脅迫や迫害を受けていたとされる。",
+      "tags": [
+        "人権",
+        "社会"
+      ],
+      "stance": "neutral",
+      "stance_reason": "賞の受賞と過去の経歴を併せて紹介しているため。",
+      "key_phrase_original": "Osvajanje slobode",
+      "key_phrase_ja": "自由の征服",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "56d0ebb4",
+      "title_ja": "ザイェチャル高等検察庁、過失致死の疑いで未成年者の拘留を請求",
+      "summary_ja": "ザイェチャル高等検察庁が、男性を過失により死亡させた疑いのある未成年者の拘留を求めた。",
+      "tags": [
+        "社会"
+      ],
+      "stance": "neutral",
+      "stance_reason": "検察の法的措置という事実を報じているため。",
+      "key_phrase_original": "ВЈТ Зајечар",
+      "key_phrase_ja": "ザイェチャル高等検察庁",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "e1b3010f",
+      "title_ja": "今日のインターネット障害の経緯は？",
+      "summary_ja": "本日発生したインターネット障害について、その発生経緯が問われている。",
+      "tags": [
+        "科学技術"
+      ],
+      "stance": "neutral",
+      "stance_reason": "障害の原因究明を求める中立的な内容であるため。",
+      "key_phrase_original": "اختلال اینترنت",
+      "key_phrase_ja": "インターネット障害",
+      "enriched_by": "gemini"
     },
     {
       "article_id": "357b16d8",
-      "title_ja": "ترامب يصف اجتماعه بالزعيم الصيني بـ\"المثمر\".. رفض دعم بكين لطهران",
-      "summary_ja": "",
-      "tags": [],
+      "title_ja": "トランプ氏、中国指導者との会談を「生産的」と評価、北京によるテヘラン支援の拒否を示唆",
+      "summary_ja": "トランプ氏が中国指導者との会談を生産的と表現した。北京側によるテヘランへの支援は拒否された。",
+      "tags": [
+        "政治",
+        "外交"
+      ],
       "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "ترامب يصف اجتماعه بالزعيم الصيني بـ\"المثمر\".. رفض دعم بكين لطهران",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
+      "stance_reason": "トランプ氏の会談に関する発言を事実として記録しているため。",
+      "key_phrase_original": "المثمر",
+      "key_phrase_ja": "生産的",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "abb9fa40",
+      "title_ja": "マンチェスター・シティ、プレミアリーグの115件の告発のうち114件で有罪判決",
+      "summary_ja": "マンチェスター・シティが、プレミアリーグによる全115件の告発のうち114件において有罪と認定された。",
+      "tags": [
+        "スポーツ"
+      ],
+      "stance": "neutral",
+      "stance_reason": "判決の具体的な件数を事実として報じているため。",
+      "key_phrase_original": "114 of 115 Premier League Charges",
+      "key_phrase_ja": "プレミアリーグの115件の告発のうち114件",
+      "enriched_by": "gemini"
     },
     {
       "article_id": "7cf609af",
@@ -58,6 +161,127 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Criminal Syndicate: Hawks official arrested for kidnappings linked to Gqeberha prosecutor murder accused",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "967d0ed3",
+      "title_ja": "Pameran Foto Pers Dunia 2026 soroti kondisi global, kebebasan pers",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pameran Foto Pers Dunia 2026 soroti kondisi global, kebebasan pers",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "77e179ed",
+      "title_ja": "Путин сообщил о подготовке стратегии развития театров, музеев и архивов в России",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Путин сообщил о подготовке стратегии развития театров, музеев и архивов в России",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d62968ee",
+      "title_ja": "Bolivia pide fijar fecha para las presidenciales con la participación de María Corina Machado",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Bolivia pide fijar fecha para las presidenciales con la participación de María Corina Machado",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c56bcde5",
+      "title_ja": "Experts to unveil 130 climate solutions at Lake Victoria conference",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Experts to unveil 130 climate solutions at Lake Victoria conference",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b71359e4",
+      "title_ja": "Aldo Mariátegui cuestiona a Janet Tello por exigir a Keiko Fujimori que se retracte: “Ubíquese un poco”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Aldo Mariátegui cuestiona a Janet Tello por exigir a Keiko Fujimori que se retracte: “Ubíquese un poco”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c9a901ae",
+      "title_ja": "¿Por qué cada vez hablamos menos?",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "¿Por qué cada vez hablamos menos?",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ffc841d6",
+      "title_ja": "KKP ajak pemda perkuat penataan ruang laut di Sumatera",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "KKP ajak pemda perkuat penataan ruang laut di Sumatera",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c4d405b0",
+      "title_ja": "Websouls Announces Global Expansion with In-House AI and Technology Suite",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Websouls Announces Global Expansion with In-House AI and Technology Suite",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "472eaa9b",
+      "title_ja": "Nemačka vlada planira da prepolovi broj dozvola za radnike s Balkana, ali poslodavci nisu oduševljeni tom idejom",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Nemačka vlada planira da prepolovi broj dozvola za radnike s Balkana, ali poslodavci nisu oduševljeni tom idejom",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "443572f9",
+      "title_ja": "Spagna, milionario Usa comunista e pro-Pal fatto arrestare da Trump a Ibiza. Ma la sinistra insorge",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Spagna, milionario Usa comunista e pro-Pal fatto arrestare da Trump a Ibiza. Ma la sinistra insorge",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "957691c0",
+      "title_ja": "Евразийская хартия: от идеи Минска до переговоров в Нью-Йорке - что изменит новый документ",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Евразийская хартия: от идеи Минска до переговоров в Нью-Йорке - что изменит новый документ",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -73,6 +297,677 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "8e92dfa5",
+      "title_ja": "Ko je Piter Til: Moć, politika, Palantir i Antihrist",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Ko je Piter Til: Moć, politika, Palantir i Antihrist",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e8f85451",
+      "title_ja": "Fujimori insiste en cuestionar a “ciertos jueces” tras críticas de Janet Tello: “La independencia no significa callar”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Fujimori insiste en cuestionar a “ciertos jueces” tras críticas de Janet Tello: “La independencia no significa callar”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0695eba9",
+      "title_ja": "Natasya Beteyob belum berhasil sumbang medali Asian Games",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Natasya Beteyob belum berhasil sumbang medali Asian Games",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "cf64e315",
+      "title_ja": "Russia, Vietnam to increase number of flights between countries",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Russia, Vietnam to increase number of flights between countries",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "234dd71d",
+      "title_ja": "Путин предложил делиться с другими странами опытом программы «Пушкинской карты»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Путин предложил делиться с другими странами опытом программы «Пушкинской карты»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8c95f0e5",
+      "title_ja": "FBR establishes NFC to end direct contact between taxpayers, officers",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "FBR establishes NFC to end direct contact between taxpayers, officers",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c34f0679",
+      "title_ja": "Daniel Sancho seguirá pagando cadena perpetua por el asesinato del colombiano Edwin Arrieta: Tribunal desestimó apelación",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Daniel Sancho seguirá pagando cadena perpetua por el asesinato del colombiano Edwin Arrieta: Tribunal desestimó apelación",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b5af5c12",
+      "title_ja": "Sexual Harassment: Appeal Court affirms professor’s two-year jail term",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Sexual Harassment: Appeal Court affirms professor’s two-year jail term",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c18cb531",
+      "title_ja": "БЖД: с 28 сентября изменится график движения поездов из-за модернизации на участке Колодищи-Городище",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "БЖД: с 28 сентября изменится график движения поездов из-за модернизации на участке Колодищи-Городище",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8e0a5cbf",
+      "title_ja": "\"Como lo sentí\" del 25 de septiembre de 2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "\"Como lo sentí\" del 25 de septiembre de 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c7f2dcbe",
+      "title_ja": "Vučić: Srbija vodi politiku slobodarske i nezavisne države koja se nalazi na evropskom putu",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Vučić: Srbija vodi politiku slobodarske i nezavisne države koja se nalazi na evropskom putu",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "013b1df2",
+      "title_ja": "Russia rejects restrictions that impede safe navigation — Foreign Ministry",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Russia rejects restrictions that impede safe navigation — Foreign Ministry",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d317c498",
+      "title_ja": "Las 10 sanciones que podría afrontar Manchester City en la Premier League tras ser declarado culpable de más de cien infracciones",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Las 10 sanciones que podría afrontar Manchester City en la Premier League tras ser declarado culpable de más de cien infracciones",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "662c9275",
+      "title_ja": "Jay McInerney, dernier tour  de piste  des Calloway",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Jay McInerney, dernier tour  de piste  des Calloway",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "07f9c8e6",
+      "title_ja": "La terminal regasificadora de Cartagena Spec LNG redujo temporalmente su capacidad a 400 Mpcd hasta el 1 de octubre: cuál es la razón",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La terminal regasificadora de Cartagena Spec LNG redujo temporalmente su capacidad a 400 Mpcd hasta el 1 de octubre: cuál es la razón",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8efca300",
+      "title_ja": "Na prvom zelenom zidu u Subotici biljke se osušile, obnova nije planirana za ovu godinu",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Na prvom zelenom zidu u Subotici biljke se osušile, obnova nije planirana za ovu godinu",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "838cdfd6",
+      "title_ja": "Cómo votar por Perú ante Venezuela en la final del Mundial de Comidas 2026 de Ibai Llanos",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Cómo votar por Perú ante Venezuela en la final del Mundial de Comidas 2026 de Ibai Llanos",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4cd0409f",
+      "title_ja": "Governor KP opposes law to curb police autonomy",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Governor KP opposes law to curb police autonomy",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "626e3510",
+      "title_ja": "Murió Oscar González Oro, una voz de radio",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Murió Oscar González Oro, una voz de radio",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bca26a5a",
+      "title_ja": "¿Ganó? Estos fueron los números de La Antioqueñita Día y Tarde del viernes 25 de septiembre de 2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "¿Ganó? Estos fueron los números de La Antioqueñita Día y Tarde del viernes 25 de septiembre de 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "40a847c5",
+      "title_ja": "Osnovi sud: Pet osoba u pritvoru zbog napada na policajce u Leskovcu",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Osnovi sud: Pet osoba u pritvoru zbog napada na policajce u Leskovcu",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f349a68b",
+      "title_ja": "Susan Sarandon y Hannah Einbinder fueron detenidas durante protesta propalestina en Nueva York",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Susan Sarandon y Hannah Einbinder fueron detenidas durante protesta propalestina en Nueva York",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0a48b749",
+      "title_ja": "La senadora María Clara Posada denuncia supuesta presión de funcionarios de la JEP sobre comparecientes de la Fuerza Pública",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La senadora María Clara Posada denuncia supuesta presión de funcionarios de la JEP sobre comparecientes de la Fuerza Pública",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d7b7f3bb",
+      "title_ja": "Comenzó la extradición a Estados Unidos de alias Araña, cabecilla de los Comandos de Frontera que había sido nombrado gestor de paz por el Gobierno Petro",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Comenzó la extradición a Estados Unidos de alias Araña, cabecilla de los Comandos de Frontera que había sido nombrado gestor de paz por el Gobierno Petro",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "35023055",
+      "title_ja": "State House development adviser Paul Waiganjo resigns, cites disconnect with reality",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "State House development adviser Paul Waiganjo resigns, cites disconnect with reality",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9486389e",
+      "title_ja": "The New York Times выбрала 100 лучших сериалов XXI века",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "The New York Times выбрала 100 лучших сериалов XXI века",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5325c08c",
+      "title_ja": "Protests against rising fuel prices erupt in EU countries — Politico",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Protests against rising fuel prices erupt in EU countries — Politico",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "baf14d96",
+      "title_ja": "D.C. appeals court sides with Pentagon on blacklist of Anthropic",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "D.C. appeals court sides with Pentagon on blacklist of Anthropic",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e33a77b6",
+      "title_ja": "El emotivo rescate de Atlas, el perro que abandonaron junto a una ruta y esperó durante dos semanas hasta que una mujer logró salvarlo",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "El emotivo rescate de Atlas, el perro que abandonaron junto a una ruta y esperó durante dos semanas hasta que una mujer logró salvarlo",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c6965e4b",
+      "title_ja": "El hombre de las 500 cuentas en redes: cayó señalado de acosar, amenazar y suplantar a 21 personas en Antioquia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "El hombre de las 500 cuentas en redes: cayó señalado de acosar, amenazar y suplantar a 21 personas en Antioquia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3e449510",
+      "title_ja": "円相場1ドル＝156円台に値上がり 介入警戒強まる",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "円相場1ドル＝156円台に値上がり 介入警戒強まる",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "82fd19b1",
+      "title_ja": "Muere un joven migrante en un asentamiento ilegal cerca de la playa del Trampolín de Ceuta",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Muere un joven migrante en un asentamiento ilegal cerca de la playa del Trampolín de Ceuta",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "69a773c6",
+      "title_ja": "Rainha da casa, Ganga deixa o 'tec-tec' das unhas como trilha sonora na memória",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Rainha da casa, Ganga deixa o 'tec-tec' das unhas como trilha sonora na memória",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0bf33742",
+      "title_ja": "La pareja del arquitecto Josep Juanpere, en libertad tras pagar 80.000 euros de fianza",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La pareja del arquitecto Josep Juanpere, en libertad tras pagar 80.000 euros de fianza",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "28a67c2d",
+      "title_ja": "Mančester siti proglašen je krivim za 114 od 115 optužbi: Sledi oduzimanje bodova i titula?",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Mančester siti proglašen je krivim za 114 od 115 optužbi: Sledi oduzimanje bodova i titula?",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5cb356b8",
+      "title_ja": "Urbagestión plantea al Ayuntamiento una propuesta para que Maricarmen vuelva a su vivienda",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Urbagestión plantea al Ayuntamiento una propuesta para que Maricarmen vuelva a su vivienda",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7122c124",
+      "title_ja": "Over 60% of Armenians favor keeping Russian military base — poll",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Over 60% of Armenians favor keeping Russian military base — poll",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a1da7c8b",
+      "title_ja": "Zelenski: Tramp će definitivno dozvoliti Ukrajini da pravi PVO projektile \"patriot\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Zelenski: Tramp će definitivno dozvoliti Ukrajini da pravi PVO projektile \"patriot\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8802e101",
+      "title_ja": "Investigado un vecino de As Neves (Pontevedra) como autor de cuatro incendios forestales",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Investigado un vecino de As Neves (Pontevedra) como autor de cuatro incendios forestales",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "605ceb19",
+      "title_ja": "Трамп подтвердил участие в саммите АТЭС в Китае в ноябре",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Трамп подтвердил участие в саммите АТЭС в Китае в ноябре",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6ad0585c",
+      "title_ja": "Wakil PM Malaysia umumkan pembentukan Dewan Halal Malaysia-Indonesia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Wakil PM Malaysia umumkan pembentukan Dewan Halal Malaysia-Indonesia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "254ebc35",
+      "title_ja": "Tras una sanción a Sainz, Franco Colapinto largará 9° el Gran Premio de Azerbaiyán en el circuito callejero de Bakú",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Tras una sanción a Sainz, Franco Colapinto largará 9° el Gran Premio de Azerbaiyán en el circuito callejero de Bakú",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f41812c2",
+      "title_ja": "Marruecos, a la espera de llamada del rey para formar Gobierno",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Marruecos, a la espera de llamada del rey para formar Gobierno",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9450f8ff",
+      "title_ja": "В Нью-Йорке дан старт переговорам по Евразийской хартии многообразия и многополярности в XXI веке",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "В Нью-Йорке дан старт переговорам по Евразийской хартии многообразия и многополярности в XXI веке",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "98dd1ce4",
+      "title_ja": "Detención del alcalde de Juchitán no está ligada a ataque contra Elvis Guerra: Sheinbaum aclara denuncia de diseñadora que elaboró su vestido",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Detención del alcalde de Juchitán no está ligada a ataque contra Elvis Guerra: Sheinbaum aclara denuncia de diseñadora que elaboró su vestido",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8af09f01",
+      "title_ja": "Extinguen un incendio forestal que consumió 1.500 hectáreas en el centro de Colombia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Extinguen un incendio forestal que consumió 1.500 hectáreas en el centro de Colombia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2fd46c9a",
+      "title_ja": "Sheinbaum tiene \"interés\" en reunirse con Xi Jinping durante su viaje a China",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Sheinbaum tiene \"interés\" en reunirse con Xi Jinping durante su viaje a China",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "fbf7910c",
+      "title_ja": "El Fondo Soledad Cazorla concede 11 nuevas becas para huérfanos por la violencia de género",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "El Fondo Soledad Cazorla concede 11 nuevas becas para huérfanos por la violencia de género",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f29a82eb",
+      "title_ja": "Se siente sismo de magnitud 5.3 este viernes 25 de septiembre en Navidad",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Se siente sismo de magnitud 5.3 este viernes 25 de septiembre en Navidad",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "df8b81d9",
+      "title_ja": "Democristianos y ultraderechistas prohíben nuevas piedras de la memoria en ciudad alemana",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Democristianos y ultraderechistas prohíben nuevas piedras de la memoria en ciudad alemana",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6ea2ec54",
+      "title_ja": "La boxeadora española Laura Fuertes, subcampeona de Europa",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La boxeadora española Laura Fuertes, subcampeona de Europa",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b8994c99",
+      "title_ja": "Raúl Rosas Jr. vs Raoni Barcelos, EN VIVO: cuándo y dónde ver en México la UFC Vegas 121",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Raúl Rosas Jr. vs Raoni Barcelos, EN VIVO: cuándo y dónde ver en México la UFC Vegas 121",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8a74cfed",
+      "title_ja": "Inquiétude dans une école primaire de Mambasa après le décès d’un élève atteint d’Ebola",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Inquiétude dans une école primaire de Mambasa après le décès d’un élève atteint d’Ebola",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "973a270d",
+      "title_ja": "Resultados del Super Once del 25 septiembre",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Resultados del Super Once del 25 septiembre",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5777f73a",
+      "title_ja": "Carla Suárez: \"Me quedo con la entrega de las jugadoras\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Carla Suárez: \"Me quedo con la entrega de las jugadoras\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "37b739a7",
+      "title_ja": "Nicolas Cage se transforma en John Madden en la biopic ‘Madden’ de Prime Video",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Nicolas Cage se transforma en John Madden en la biopic ‘Madden’ de Prime Video",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ba65192e",
+      "title_ja": "Organização Teto constrói casas para população hipervulnerável",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Organização Teto constrói casas para população hipervulnerável",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4a47712d",
+      "title_ja": "Experta aboga por mantener cada medicamento correctamente identificado en el botiquín doméstico",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Experta aboga por mantener cada medicamento correctamente identificado en el botiquín doméstico",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4d3b166d",
+      "title_ja": "Laura Fuertes pierde ante Akbas y hace historia con la plata continental",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Laura Fuertes pierde ante Akbas y hace historia con la plata continental",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a9945288",
+      "title_ja": "Thomas Tuchel: \"Cuanto más analizas a España, más tienes que admirar su forma de defender\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Thomas Tuchel: \"Cuanto más analizas a España, más tienes que admirar su forma de defender\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5e953cee",
+      "title_ja": "Tuchel: \"Es muy difícil crear ocasiones a España, pero tenemos un plan\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Tuchel: \"Es muy difícil crear ocasiones a España, pero tenemos un plan\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "b34d0e2e",
       "title_ja": "باحث إسرائيلي يفكك \"فوبيا الإخوان\".. لا دليل على شبكة خفية تقود الاحتجاجات بأمريكا",
       "summary_ja": "",
@@ -80,6 +975,1075 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "باحث إسرائيلي يفكك \"فوبيا الإخوان\".. لا دليل على شبكة خفية تقود الاحتجاجات بأمريكا",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "deab81a8",
+      "title_ja": "Le Maroc a-t-il voté contre son bilan?",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Le Maroc a-t-il voté contre son bilan?",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a7df4f2a",
+      "title_ja": "Pharmacists play key role in protecting public health, patient care: Governor Sindh",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pharmacists play key role in protecting public health, patient care: Governor Sindh",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a046a255",
+      "title_ja": "El gobierno federal demanda a Minnesota por exigir permisos y esperas para comprar armas de fuego",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "El gobierno federal demanda a Minnesota por exigir permisos y esperas para comprar armas de fuego",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6179e962",
+      "title_ja": "Malaysia’s deputy PM seeks removal of barriers to global halal trade",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Malaysia’s deputy PM seeks removal of barriers to global halal trade",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2b7bfc85",
+      "title_ja": "ظهور مرشح “الآوت سايدر” في ميدلت.. أسامة باريك من السوشيال ميديا إلى البرلمان",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "ظهور مرشح “الآوت سايدر” في ميدلت.. أسامة باريك من السوشيال ميديا إلى البرلمان",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "04d53899",
+      "title_ja": "Man City guilty of breaching EPL financial rules, punishment still pending",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Man City guilty of breaching EPL financial rules, punishment still pending",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "063d659c",
+      "title_ja": "La selección peruana Sub 20 obtuvo  medalla de bronce después de 32 años: triunfazo frente Chile por los Juegos Suramericanos Santa Fe 2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La selección peruana Sub 20 obtuvo  medalla de bronce después de 32 años: triunfazo frente Chile por los Juegos Suramericanos Santa Fe 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3cc4b3ce",
+      "title_ja": "Кто оказался за столом Трампа и Си в Белом доме",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Кто оказался за столом Трампа и Си в Белом доме",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0c7361b4",
+      "title_ja": "Trump faces tough choices as Iran dangles deal to reopen Hormuz before US midterms",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Trump faces tough choices as Iran dangles deal to reopen Hormuz before US midterms",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "1dd96b22",
+      "title_ja": "KU, HRC sign MoU to promote human rights, student training, social awareness among masses",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "KU, HRC sign MoU to promote human rights, student training, social awareness among masses",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "103dde0b",
+      "title_ja": "Трамп принял приглашение Си Цзиньпина посетить саммит АТЭС в Китае",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Трамп принял приглашение Си Цзиньпина посетить саммит АТЭС в Китае",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5a7ca212",
+      "title_ja": "Del control remoto a la conversación: cómo la inteligencia artificial transforma la forma de ver televisión",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Del control remoto a la conversación: cómo la inteligencia artificial transforma la forma de ver televisión",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2b8ad64d",
+      "title_ja": "Labour rejects Declassified journalists from party conference for third year – UK politics live",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Labour rejects Declassified journalists from party conference for third year – UK politics live",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "18f4986d",
+      "title_ja": "Bruce Mac Master se refirió al veto de Abelardo de la Espriella que estaría afectando a la Andi: “Suspender la sistemática campaña de acciones mal intencionadas”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Bruce Mac Master se refirió al veto de Abelardo de la Espriella que estaría afectando a la Andi: “Suspender la sistemática campaña de acciones mal intencionadas”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "991f6bbc",
+      "title_ja": "Afghan consul general calls on Governor",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Afghan consul general calls on Governor",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "fc84fcaf",
+      "title_ja": "Mendonça mantém em sigilo processo do Master em que negou operação contra Cláudio Castro",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Mendonça mantém em sigilo processo do Master em que negou operação contra Cláudio Castro",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "31816aa3",
+      "title_ja": "Supreme Court, over liberal dissents, lets DHS overhaul immigration database for midterms",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Supreme Court, over liberal dissents, lets DHS overhaul immigration database for midterms",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "59ee418e",
+      "title_ja": "Lahore ranked world’s most polluted city as air quality deteriorates",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Lahore ranked world’s most polluted city as air quality deteriorates",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ab190bfc",
+      "title_ja": "Lupillo Rivera estalla y abandona reality show de forma abrupta: “Buscan generar morbo, chismes y notas amarillistas”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Lupillo Rivera estalla y abandona reality show de forma abrupta: “Buscan generar morbo, chismes y notas amarillistas”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3bd5ac3a",
+      "title_ja": "Белорусы Бельгии пришли с бело-красно-белыми флагами на матч сборной Беларуси",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Белорусы Бельгии пришли с бело-красно-белыми флагами на матч сборной Беларуси",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bf75d9d4",
+      "title_ja": "Supuesto video íntimo de trabajadores del D1 en el Magdalena sacude las redes: la empresa estaría investigando los hechos que incluirían una infidelidad",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Supuesto video íntimo de trabajadores del D1 en el Magdalena sacude las redes: la empresa estaría investigando los hechos que incluirían una infidelidad",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0736f0cc",
+      "title_ja": "RAKTA doubles accessible taxi fleet in Ras Al Khaimah",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "RAKTA doubles accessible taxi fleet in Ras Al Khaimah",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ecdd6248",
+      "title_ja": "Kemenlu Jelaskan Alasan Walkout Saat Netanyahu Berpidato",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Kemenlu Jelaskan Alasan Walkout Saat Netanyahu Berpidato",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b127d531",
+      "title_ja": "Okupansi hotel Lombok meningkat jelang MotoGP Indonesia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Okupansi hotel Lombok meningkat jelang MotoGP Indonesia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4bd6a951",
+      "title_ja": "Police recover motorcycle linked to lawyer Kyalo Mbobu murder",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Police recover motorcycle linked to lawyer Kyalo Mbobu murder",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d3a3712f",
+      "title_ja": "No usar chaleco reflectivo en moto sale caro en Colombia: conozca la sanción",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "No usar chaleco reflectivo en moto sale caro en Colombia: conozca la sanción",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0f4afd7d",
+      "title_ja": "José Antonio Kast aseguró que Chile logró el control “casi total” de la inmigración ilegal",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "José Antonio Kast aseguró que Chile logró el control “casi total” de la inmigración ilegal",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6278d741",
+      "title_ja": "Joven denuncia que entrenador la grabó sin permiso mientras hacía ejercicio y exhibe la respuesta del dueño del gimnasio",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Joven denuncia que entrenador la grabó sin permiso mientras hacía ejercicio y exhibe la respuesta del dueño del gimnasio",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "29fcf08f",
+      "title_ja": "La Justicia porteña presentó Senderos, un programa para jóvenes en contacto con la ley penal",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "La Justicia porteña presentó Senderos, un programa para jóvenes en contacto con la ley penal",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "78a688b1",
+      "title_ja": "S&P prevé mayor crecimiento para Chile en 2027 y ratificó calificación soberana",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "S&P prevé mayor crecimiento para Chile en 2027 y ratificó calificación soberana",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "04900096",
+      "title_ja": "Polémica en Manizales: joven murió en accidente y su familia denuncia que habría sido en medio de una persecución de agentes de tránsito; hay video",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Polémica en Manizales: joven murió en accidente y su familia denuncia que habría sido en medio de una persecución de agentes de tránsito; hay video",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7b100b21",
+      "title_ja": "Cómo afecta a la pensión el tipo de jubilación que se elija: cobrar 1.580 o 2.000 euros al mes puede depender de cuándo te retires",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Cómo afecta a la pensión el tipo de jubilación que se elija: cobrar 1.580 o 2.000 euros al mes puede depender de cuándo te retires",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9657aa1a",
+      "title_ja": "PFA lodges FIR, 2 units sealed, Rs115,000 fines imposed",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "PFA lodges FIR, 2 units sealed, Rs115,000 fines imposed",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f7ce42d4",
+      "title_ja": "Amistoso internacional: Estados Unidos y Perú se enfrentan por un duelo amistoso",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Amistoso internacional: Estados Unidos y Perú se enfrentan por un duelo amistoso",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "254c21f8",
+      "title_ja": "Menhaj sebut Expo 2026 UMKM dan Ekosistem Haji ikut gerakkan ekonomi",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Menhaj sebut Expo 2026 UMKM dan Ekosistem Haji ikut gerakkan ekonomi",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "943b9b2a",
+      "title_ja": "PU remains major hub of knowledge, research and scholarship: VC",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "PU remains major hub of knowledge, research and scholarship: VC",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "865da5a8",
+      "title_ja": "\"Njegovi zločini su velike težine\": Haške sudije protiv prevremenog puštanja Jovice Stanišića",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "\"Njegovi zločini su velike težine\": Haške sudije protiv prevremenog puštanja Jovice Stanišića",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2bdbe109",
+      "title_ja": "El mapa de la pobreza y la indigencia del país de Milei",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "El mapa de la pobreza y la indigencia del país de Milei",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4255b05a",
+      "title_ja": "Life behind bars for man who raped and impregnated daughter",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Life behind bars for man who raped and impregnated daughter",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b0f70437",
+      "title_ja": "Pančevo: Promocija nove generacije podoficira Vojske Srbije, medju najboljima i Maja Dinić",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pančevo: Promocija nove generacije podoficira Vojske Srbije, medju najboljima i Maja Dinić",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d3521636",
+      "title_ja": "‘India illegally occupies Kashmir’, ‘manhoos desh’: JNU leftist Nivedita Menon faces demands to cancel Udaipur lecture over past remarks",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "‘India illegally occupies Kashmir’, ‘manhoos desh’: JNU leftist Nivedita Menon faces demands to cancel Udaipur lecture over past remarks",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "251168a3",
+      "title_ja": "Un prêtre tué, quatre personnes blessées : la Pologne sous le choc après une attaque au couteau",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Un prêtre tué, quatre personnes blessées : la Pologne sous le choc après une attaque au couteau",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8a8f3243",
+      "title_ja": "Leo XIV, Trying to Be Everyone’s Pope, Tours Secular France",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Leo XIV, Trying to Be Everyone’s Pope, Tours Secular France",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0aa9dc4b",
+      "title_ja": "Yannick Jadot temporairement suspendu des Ecologistes pour son soutien à Raphaël Glucksmann",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Yannick Jadot temporairement suspendu des Ecologistes pour son soutien à Raphaël Glucksmann",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "1e08a777",
+      "title_ja": "Paula Manzanal sorprende al anunciar que se separa del papá de su bebé tras casi tres años: “Cada uno seguirá su camino”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Paula Manzanal sorprende al anunciar que se separa del papá de su bebé tras casi tres años: “Cada uno seguirá su camino”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "27e0bb8a",
+      "title_ja": "Governors seek Ksh68.8B global support for maternal and newborn health",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Governors seek Ksh68.8B global support for maternal and newborn health",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "42aecda1",
+      "title_ja": "SAU, FAO to jointly observe World Food Day, promote food security and sustainable agriculture",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "SAU, FAO to jointly observe World Food Day, promote food security and sustainable agriculture",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3f60ce08",
+      "title_ja": "IN PICS | King Misuzulu celebrates Heritage Day in Umlazi",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "IN PICS | King Misuzulu celebrates Heritage Day in Umlazi",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "1decb5fb",
+      "title_ja": "Temblor de mediana intensidad se percibió en la zona central de Chile",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Temblor de mediana intensidad se percibió en la zona central de Chile",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "eea796ca",
+      "title_ja": "Aumenta la cifra de muertos por el choque múltiple en La Yaguara",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Aumenta la cifra de muertos por el choque múltiple en La Yaguara",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ba621958",
+      "title_ja": "Com mãe de Virginia Fonseca, Globo estreia 2ª temporada de Poderosas do Cerrado",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Com mãe de Virginia Fonseca, Globo estreia 2ª temporada de Poderosas do Cerrado",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "98d80f76",
+      "title_ja": "Um em cada três candidatos à Câmara se declara preto ou pardo, mas é considerado branco, diz estudo",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Um em cada três candidatos à Câmara se declara preto ou pardo, mas é considerado branco, diz estudo",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8252358d",
+      "title_ja": "Ariana Harwicz, cancelada en España y  publicada en Irán: editan en persa su último libro",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Ariana Harwicz, cancelada en España y  publicada en Irán: editan en persa su último libro",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "45a03c05",
+      "title_ja": "Polisi selidiki guru sekolah internasional lecehkan siswi di Tangsel",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Polisi selidiki guru sekolah internasional lecehkan siswi di Tangsel",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8e70b206",
+      "title_ja": "Urbagestión presenta al Ayuntamiento de Madrid una propuesta para que Maricarmen pueda volver a su casa con un alquiler “estable y asequible”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Urbagestión presenta al Ayuntamiento de Madrid una propuesta para que Maricarmen pueda volver a su casa con un alquiler “estable y asequible”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "552cb017",
+      "title_ja": "Vorwurf Terrorunterstützung – Warum Netanjahu versucht, Parteien von der Wahl auszuschließen",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Vorwurf Terrorunterstützung – Warum Netanjahu versucht, Parteien von der Wahl auszuschließen",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2d58c9c1",
+      "title_ja": "IUB, Enablers join hands to promote data science, AI, entrepreneurship",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "IUB, Enablers join hands to promote data science, AI, entrepreneurship",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "be4914a5",
+      "title_ja": "У Менску да 2030 году будзе звыш 5 тысяч зарадак для электрамабіляў",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "У Менску да 2030 году будзе звыш 5 тысяч зарадак для электрамабіляў",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7d97d30d",
+      "title_ja": "MUP: U Kuli uhapšen osumnjičeni za napad sekirom na štand SNS-a",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "MUP: U Kuli uhapšen osumnjičeni za napad sekirom na štand SNS-a",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "98c2fb57",
+      "title_ja": "Kiev’s 'top brass' continues to trade sovereignty for Western handouts — Russian MFA",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Kiev’s 'top brass' continues to trade sovereignty for Western handouts — Russian MFA",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6ca7cbd9",
+      "title_ja": "Đilas iz Beča: Važno da Evropski parlament i Savet Evrope pošalju posmatrače na izbore",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Đilas iz Beča: Važno da Evropski parlament i Savet Evrope pošalju posmatrače na izbore",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f488f8aa",
+      "title_ja": "„Es gibt keine Änderung in der Taiwan-Politik“, verspricht der US-Botschafter in China",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "„Es gibt keine Änderung in der Taiwan-Politik“, verspricht der US-Botschafter in China",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a026a963",
+      "title_ja": "Iran Proposes 7-Day Plan to End War",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Iran Proposes 7-Day Plan to End War",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "63af2add",
+      "title_ja": "Jedete za tastaturom - mikrobiolozi upozoravaju na naviku koja može biti rizična",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Jedete za tastaturom - mikrobiolozi upozoravaju na naviku koja može biti rizična",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c1d4f760",
+      "title_ja": "Lanud Atang Sendjaja tanam 2.050 pohon pisang untuk ketahanan pangan",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Lanud Atang Sendjaja tanam 2.050 pohon pisang untuk ketahanan pangan",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "55261be8",
+      "title_ja": "Темиртау затопило после сильного дождя: жители показали видео",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Темиртау затопило после сильного дождя: жители показали видео",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0902efba",
+      "title_ja": "A Besançon, passe d’armes entre un artiste dénonçant les violences policières et le maire LR",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "A Besançon, passe d’armes entre un artiste dénonçant les violences policières et le maire LR",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e71469dd",
+      "title_ja": "“No está nada fácil”: el Gobierno trabaja contra reloj por las PASO y evalúa más apertura para impulsar nuevos acuerdos",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "“No está nada fácil”: el Gobierno trabaja contra reloj por las PASO y evalúa más apertura para impulsar nuevos acuerdos",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "66d0806c",
+      "title_ja": "Bež’te, žene, stiže Zdravko Čolić",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Bež’te, žene, stiže Zdravko Čolić",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "05d0e3b2",
+      "title_ja": "\"Crna\" kutija u Kraljevu, Slavković: Postavljena je tu samo da bi isprovocirala, SNS hoće da izazove incident",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "\"Crna\" kutija u Kraljevu, Slavković: Postavljena je tu samo da bi isprovocirala, SNS hoće da izazove incident",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6d265e52",
+      "title_ja": "Asesinan a dos policías en Abrego, Norte de Santander; uno de los fallecidos es subcomandante de estación",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Asesinan a dos policías en Abrego, Norte de Santander; uno de los fallecidos es subcomandante de estación",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "848cf165",
+      "title_ja": "Defesa de Vorcaro critica divulgação de mensagens e vê 'espetacularização do caso'",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Defesa de Vorcaro critica divulgação de mensagens e vê 'espetacularização do caso'",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7a39c9ae",
+      "title_ja": "ルーラ氏、上院での危機を予見し、連立与党内の「独立系」候補を批判",
+      "summary_ja": "ルーラ氏が上院での政治的危機を予想した。連立与党の枠組みから独立している候補者を批判した。",
+      "tags": [
+        "政治"
+      ],
+      "stance": "neutral",
+      "stance_reason": "ルーラ氏の政治的予測と批判をそのまま伝えているため。",
+      "key_phrase_original": "candidatos 'independentes'",
+      "key_phrase_ja": "独立系候補",
+      "enriched_by": "gemini"
+    },
+    {
+      "article_id": "e6a7d127",
+      "title_ja": "Klasemen Grup A: Malaysia puncak, Indonesia posisi kedua",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Klasemen Grup A: Malaysia puncak, Indonesia posisi kedua",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "458cdced",
+      "title_ja": "Premios CorfiSostenible 2026: 12 proyectos que están dejando huella en Colombia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Premios CorfiSostenible 2026: 12 proyectos que están dejando huella en Colombia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "38d6accb",
+      "title_ja": "Córdoba bajo riesgo extremo de incendios forestales por vientos cambiantes y marcada sequía",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Córdoba bajo riesgo extremo de incendios forestales por vientos cambiantes y marcada sequía",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5e04523e",
+      "title_ja": "ВСУ разнесли три завода РФ по производству ракет",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "ВСУ разнесли три завода РФ по производству ракет",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0ac1daf6",
+      "title_ja": "Pope Leo says UN risks becoming 'charade' as he sounds alarm over AI",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pope Leo says UN risks becoming 'charade' as he sounds alarm over AI",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7a4ed386",
+      "title_ja": "Pope Leo XIV leads Vespers at Notre-Dame Cathedral in Paris",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pope Leo XIV leads Vespers at Notre-Dame Cathedral in Paris",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f264676f",
+      "title_ja": "Кикбоксер Нечитайло победил на мировом Гран-при в Японии",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Кикбоксер Нечитайло победил на мировом Гран-при в Японии",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2c8178f3",
+      "title_ja": "Élue députée, Nabila Rmili conserve son fauteuil de maire de Casablanca",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Élue députée, Nabila Rmili conserve son fauteuil de maire de Casablanca",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a878f7e7",
+      "title_ja": "IHRA assesses Ali Medical Centre for licensing",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "IHRA assesses Ali Medical Centre for licensing",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "76c339da",
+      "title_ja": "FIFA ASEAN Cup: Indonesia Claim 2-0 Victory Over Singapore",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "FIFA ASEAN Cup: Indonesia Claim 2-0 Victory Over Singapore",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "12974210",
+      "title_ja": "Сразу несколько регионов России в огне",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Сразу несколько регионов России в огне",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e4a2b3c6",
+      "title_ja": "Gobierno de Delcy Rodríguez tiene un mes sin publicar el balance oficial por los terremotos",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Gobierno de Delcy Rodríguez tiene un mes sin publicar el balance oficial por los terremotos",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "393c200f",
+      "title_ja": "Скорректированы строительные нормы по применению отопительных приборов в колледжах, школах и детсадах",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Скорректированы строительные нормы по применению отопительных приборов в колледжах, школах и детсадах",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bcb3513c",
+      "title_ja": "CBS News: армия США готовится к возможной военной операции на Кубе",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "CBS News: армия США готовится к возможной военной операции на Кубе",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "046310eb",
+      "title_ja": "Presiden tugaskan 1.000 perwira TNI untuk edukasi pencegahan karhutla",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Presiden tugaskan 1.000 perwira TNI untuk edukasi pencegahan karhutla",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ecabf627",
+      "title_ja": "تقرير: نساء أكثر عددا وشباب أقل تمثيلا في انتخابات 2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "تقرير: نساء أكثر عددا وشباب أقل تمثيلا في انتخابات 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f814069b",
+      "title_ja": "Pide paciencia: Marquinhos asegura que vendrán mejores resultados para la Selección de Brasil",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pide paciencia: Marquinhos asegura que vendrán mejores resultados para la Selección de Brasil",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b58d789c",
+      "title_ja": "AFCON Qualifiers: Ilenikhena Handed Debut As Aina, Chukwueze Start For Super Eagles Against Madagascar",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "AFCON Qualifiers: Ilenikhena Handed Debut As Aina, Chukwueze Start For Super Eagles Against Madagascar",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2af1e362",
+      "title_ja": "Fé une mulheres, e 46% das evangélicas preferem Flávio Bolsonaro enquanto 26% votam em Lula",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Fé une mulheres, e 46% das evangélicas preferem Flávio Bolsonaro enquanto 26% votam em Lula",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "43e731e9",
+      "title_ja": "«Поиск троянского коня внутри ЕС». Сможет ли Трамп убедить ЕС снять санкции с беларусского калия - мнение",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«Поиск троянского коня внутри ЕС». Сможет ли Трамп убедить ЕС снять санкции с беларусского калия - мнение",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3ccbbcb7",
+      "title_ja": "برنامه روز هفتم بازی‌های آسیایی ناگویا",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "برنامه روز هفتم بازی‌های آسیایی ناگویا",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "228765c8",
+      "title_ja": "Banning H-1B teachers is a recipe for disaster",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Banning H-1B teachers is a recipe for disaster",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7073a374",
+      "title_ja": "Senior Kazakh officials detained after 14 service members swept out to sea",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Senior Kazakh officials detained after 14 service members swept out to sea",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a25fc46e",
+      "title_ja": "نتیجه بازی پرسپولیس و چادرملو؛ صفر بر یک",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "نتیجه بازی پرسپولیس و چادرملو؛ صفر بر یک",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -95,6 +2059,149 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "89860432",
+      "title_ja": "Xi Jinping: “China y EE. UU. podemos encontrar el camino correcto de llevarnos bien entre nuestros dos grandes países en este planeta al que ambos llamamos hogar”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Xi Jinping: “China y EE. UU. podemos encontrar el camino correcto de llevarnos bien entre nuestros dos grandes países en este planeta al que ambos llamamos hogar”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f579f144",
+      "title_ja": "No Brasil, Carrère curte chorinho, regula caipirinha e é assediado no aeroporto",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "No Brasil, Carrère curte chorinho, regula caipirinha e é assediado no aeroporto",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "efecba48",
+      "title_ja": "Netanyahu Said to Have Been Warned by Emirati Leader About Hamas Attack Before Oct. 7",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Netanyahu Said to Have Been Warned by Emirati Leader About Hamas Attack Before Oct. 7",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bac49c85",
+      "title_ja": "Soft Makeup Phoebe Dynevor yang Menawan saat Menjadi Pengantin, Timeless Look",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Soft Makeup Phoebe Dynevor yang Menawan saat Menjadi Pengantin, Timeless Look",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8487bd2a",
+      "title_ja": "Pradhama Drishtiya Kuttakkar review: Parvathy Thiruvothu's gritty cop cover-up thriller is no Drishyam, and that's its strength",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pradhama Drishtiya Kuttakkar review: Parvathy Thiruvothu's gritty cop cover-up thriller is no Drishyam, and that's its strength",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4ae22c27",
+      "title_ja": "Микростудия за 20 тысяч долларов превратилась в квартиру за 65 тысяч. Что происходит с ценами на жилье в пригороде Минска",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Микростудия за 20 тысяч долларов превратилась в квартиру за 65 тысяч. Что происходит с ценами на жилье в пригороде Минска",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bf3ef434",
+      "title_ja": "Optimalisasi Retribusi TKA, Kemendagri Minta Pemda Dorong Integrasi Sistem dan Data",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Optimalisasi Retribusi TKA, Kemendagri Minta Pemda Dorong Integrasi Sistem dan Data",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f989b702",
+      "title_ja": "Basarnas: Percepatan \"salvage\" KM Virgo mudahkan evakuasi jasad korban",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Basarnas: Percepatan \"salvage\" KM Virgo mudahkan evakuasi jasad korban",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "93dab173",
+      "title_ja": "Así es la ‘capital de las flores’ en Antioquia, un destino ideal para el ecoturismo a una hora de Medellín",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Así es la ‘capital de las flores’ en Antioquia, un destino ideal para el ecoturismo a una hora de Medellín",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d9c0f58e",
+      "title_ja": "قیمت طلا از ۲۴ میلیون تومان عقب نشینی کرد",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "قیمت طلا از ۲۴ میلیون تومان عقب نشینی کرد",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "b492a11a",
+      "title_ja": "Man City Found Guilty Of 114 EPL Charges — Report",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Man City Found Guilty Of 114 EPL Charges — Report",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "25ab7bd2",
+      "title_ja": "В Эрмитаже обсудили миротворчество в современных культурах Востока и Запада",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "В Эрмитаже обсудили миротворчество в современных культурах Востока и Запада",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7288b2bf",
+      "title_ja": "Killer brews: Three dead, two fighting for lives in Kitengela",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Killer brews: Three dead, two fighting for lives in Kitengela",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "d54c2045",
       "title_ja": "خسائر فادحة لإغلاق جماعة ليبية مسلحة خط الشرارة- الزاوية النفطي",
       "summary_ja": "",
@@ -102,6 +2209,105 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "خسائر فادحة لإغلاق جماعة ليبية مسلحة خط الشرارة- الزاوية النفطي",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "5dbac652",
+      "title_ja": "Молодежь Гродненской области присоединилась к инициативе \"Восстановление святынь Беларуси\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Молодежь Гродненской области присоединилась к инициативе \"Восстановление святынь Беларуси\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c0cb76f6",
+      "title_ja": "Astronaut Shenzhou-23 beri ucapan Festival Pertengahan Musim Gugur",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Astronaut Shenzhou-23 beri ucapan Festival Pertengahan Musim Gugur",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e71d25c2",
+      "title_ja": "BREAKING: Gombe PDP picks date for fresh primary, clears Pantami, 2 others",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "BREAKING: Gombe PDP picks date for fresh primary, clears Pantami, 2 others",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0d6b3234",
+      "title_ja": "'Invest with Iraq': Al Zaidi's appeal to UN",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "'Invest with Iraq': Al Zaidi's appeal to UN",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9bba249c",
+      "title_ja": "Manchester City found guilty of 114 charges",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Manchester City found guilty of 114 charges",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9e12eaca",
+      "title_ja": "Preocupación en Chaparral, Tolima, por los constantes sismos: hubo 40 movimientos en la madrugada; esto dicen las autoridades",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Preocupación en Chaparral, Tolima, por los constantes sismos: hubo 40 movimientos en la madrugada; esto dicen las autoridades",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "408479eb",
+      "title_ja": "Pope Leo XIV rides through Paris in the popemobile to Notre-Dame",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Pope Leo XIV rides through Paris in the popemobile to Notre-Dame",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a227003e",
+      "title_ja": "MUP: Uhapšen muškarac iz Kule - sekirom polomio štand SNS, drškom sekire udario jednog aktivistu",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "MUP: Uhapšen muškarac iz Kule - sekirom polomio štand SNS, drškom sekire udario jednog aktivistu",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e6d0fed4",
+      "title_ja": "Dans «Paolo» sur HBO Max, Jérôme Niel assouvit ses délires",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Dans «Paolo» sur HBO Max, Jérôme Niel assouvit ses délires",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -117,6 +2323,72 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "2aef474f",
+      "title_ja": "Russian business support unit to be created in Uttar Pradesh, India — trade representative",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Russian business support unit to be created in Uttar Pradesh, India — trade representative",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4a42b354",
+      "title_ja": "Пенсионерка из Клецка переписывалась с мнимым Илоном Маском из-за Tesla",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Пенсионерка из Клецка переписывалась с мнимым Илоном Маском из-за Tesla",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "06fdc5c8",
+      "title_ja": "Gaza : la résolution du conflit totalement «dans l’impasse»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Gaza : la résolution du conflit totalement «dans l’impasse»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "28643fd2",
+      "title_ja": "NARSA denies claims it pressured Morocco’s delivery companies",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "NARSA denies claims it pressured Morocco’s delivery companies",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "dcc1eee3",
+      "title_ja": "When does an expat stop being an expat? Why people are putting down roots in Abu Dhabi",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "When does an expat stop being an expat? Why people are putting down roots in Abu Dhabi",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "89393eeb",
+      "title_ja": "Wapres minta layanan publik tetap berjalan pascabencana Solok",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Wapres minta layanan publik tetap berjalan pascabencana Solok",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "5b6e4230",
       "title_ja": "Кула: Ухапшен осумњичени за напад на активисту и штанд СНС-а",
       "summary_ja": "",
@@ -124,6 +2396,50 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Кула: Ухапшен осумњичени за напад на активисту и штанд СНС-а",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "da0d9c44",
+      "title_ja": "Matías Gvozdenovich asume la presidencia del radicalismo cordobés - derechadiario.com.ar",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Matías Gvozdenovich asume la presidencia del radicalismo cordobés - derechadiario.com.ar",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c43a56d7",
+      "title_ja": "Llaryora anunció $1.000 millones en financiamiento para emprendedores y destacó el “ADN productivo” de la provincia",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Llaryora anunció $1.000 millones en financiamiento para emprendedores y destacó el “ADN productivo” de la provincia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3c332eeb",
+      "title_ja": "Выставка к 120-летию актрисы Ирины Жданович открылась в Купаловском театре",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Выставка к 120-летию актрисы Ирины Жданович открылась в Купаловском театре",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ecaf0cf0",
+      "title_ja": "Perú definió sus convocadas para el Sudamericano Femenino de Vóley Sub 19 en Venezuela",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Perú definió sus convocadas para el Sudamericano Femenino de Vóley Sub 19 en Venezuela",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -172,6 +2488,28 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "d2e0cd43",
+      "title_ja": "Ex-deputado que apresentou projeto para retirar título de padroeira do Brasil foi assessor de Bolsonaro",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Ex-deputado que apresentou projeto para retirar título de padroeira do Brasil foi assessor de Bolsonaro",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8b3ca5aa",
+      "title_ja": "Музейно-просветительский центр и экстерьерная экспозиция могут появиться в Брестской крепости",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Музейно-просветительский центр и экстерьерная экспозиция могут появиться в Брестской крепости",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "97451f8b",
       "title_ja": "Hardiyanto Kenneth kawal operasi modifikasi cuaca Jabodetabek",
       "summary_ja": "",
@@ -183,6 +2521,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "0ce5c5af",
+      "title_ja": "Xi Jinping y Peng Liyuan asisten a la cena de Estado ofrecida por Donald y Melania Trump",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Xi Jinping y Peng Liyuan asisten a la cena de Estado ofrecida por Donald y Melania Trump",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "de9d0a88",
       "title_ja": "Jaringan PRIMA perkuat ekosistem pembayaran dengan delapan mitra",
       "summary_ja": "",
@@ -190,6 +2539,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Jaringan PRIMA perkuat ekosistem pembayaran dengan delapan mitra",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0c210164",
+      "title_ja": "Au Proche-Orient, la France en quête de poids militaire",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Au Proche-Orient, la France en quête de poids militaire",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -234,6 +2594,28 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Obrušio se deo plafona u jaslicama u Vršcu, zakačio i dete, ali nije povređeno",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f52dd805",
+      "title_ja": "America at 250: From the American dream to book bans and AI",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "America at 250: From the American dream to book bans and AI",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "808a9513",
+      "title_ja": "Lanzan concurso para escribir cuentos sobre su perro o gato: podrá ganar un millón de pesos",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Lanzan concurso para escribir cuentos sobre su perro o gato: podrá ganar un millón de pesos",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -293,6 +2675,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "0c234ce4",
+      "title_ja": "Rizeigat clan bids for Hemedti’s ear, Burhan’s US visa troubles, Kordofan battles come to head as RSF presses ahead in Blue Nile, Kiir re-engineers electoral scene",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Rizeigat clan bids for Hemedti’s ear, Burhan’s US visa troubles, Kordofan battles come to head as RSF presses ahead in Blue Nile, Kiir re-engineers electoral scene",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "03e82c71",
       "title_ja": "Libertad provisional para el hombre detenido en Ordes (A Coruña) acusado de mantener relaciones sexuales con una menor",
       "summary_ja": "",
@@ -333,6 +2726,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "UNICEF alerta de que uno de cada cuatro niños en Yemen sufren desnutrición aguda en pleno repunte de los combates",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0ea336d0",
+      "title_ja": "Первый в Беларуси исследовательский центр доказательной фитофармации открыт в БГМУ",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Первый в Беларуси исследовательский центр доказательной фитофармации открыт в БГМУ",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -524,6 +2928,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "5ee4641f",
+      "title_ja": "Couple jailed for at least 21 years for murder of vulnerable man in their care",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Couple jailed for at least 21 years for murder of vulnerable man in their care",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "234813a6",
       "title_ja": "El Ejército de EEUU se prepara para una posible acción militar en torno a Cuba, según CBS",
       "summary_ja": "",
@@ -531,17 +2946,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "El Ejército de EEUU se prepara para una posible acción militar en torno a Cuba, según CBS",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "bf75d9d4",
-      "title_ja": "Supuesto video íntimo de trabajadores del D1 en el Magdalena sacude las redes: la empresa estaría investigando los hechos que incluirían una infidelidad",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Supuesto video íntimo de trabajadores del D1 en el Magdalena sacude las redes: la empresa estaría investigando los hechos que incluirían una infidelidad",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -564,6 +2968,39 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Sve je moguće osim da Vučić dostojanstveno prihvati poraz",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e35f3e54",
+      "title_ja": "Usa, 'nostra posizione su Taiwan non è cambiata, vogliamo la pace nello Stretto'",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Usa, 'nostra posizione su Taiwan non è cambiata, vogliamo la pace nello Stretto'",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4d543ccd",
+      "title_ja": "Paz com o Irã vira trunfo de Xi em visita a Trump",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Paz com o Irã vira trunfo de Xi em visita a Trump",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4ebc25a0",
+      "title_ja": "What Abu Dhabi hotels will soon have to offer every guest",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "What Abu Dhabi hotels will soon have to offer every guest",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -597,6 +3034,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "إلى أين يتجه الشرق الأوسط بعد انسحاب أمريكا النهائي منه؟",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "2531296a",
+      "title_ja": "Declaran culpable a Manchester City: estalla escándalo y se teme lo peor en Premier League",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Declaran culpable a Manchester City: estalla escándalo y se teme lo peor en Premier League",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -678,6 +3126,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "fe13c75b",
+      "title_ja": "Nearly half a million people could die from El Niño heat by February",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Nearly half a million people could die from El Niño heat by February",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "d6ec3437",
       "title_ja": "El Franz Mayer se convertirá en una pista fuera de este mundo con la Gala Galactica: Dj Set, baile y cyberpunk en la noche de museos",
       "summary_ja": "",
@@ -707,17 +3166,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Papá León XIV y la pulla que le envió a Donald Trump por no dejar ingresar a periodistas a la Casa Blanca",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "8e70b206",
-      "title_ja": "Urbagestión presenta al Ayuntamiento de Madrid una propuesta para que Maricarmen pueda volver a su casa con un alquiler “estable y asequible”",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Urbagestión presenta al Ayuntamiento de Madrid una propuesta para que Maricarmen pueda volver a su casa con un alquiler “estable y asequible”",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -766,17 +3214,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "9bba249c",
-      "title_ja": "Manchester City found guilty of 114 charges",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Manchester City found guilty of 114 charges",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "660eb082",
       "title_ja": "Fire occurred on board of Triumph ship near Kamchatka — rescuers",
       "summary_ja": "",
@@ -806,6 +3243,28 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "“El agropecuario” reveló lo que gana mensualmente, en dólares, haciendo lives en TikTok: serían más de $100 millones",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8d76ef61",
+      "title_ja": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3390c27b",
+      "title_ja": "Manchester City respond as Premier League case takes new turn",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Manchester City respond as Premier League case takes new turn",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -876,6 +3335,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "a5c27cac",
+      "title_ja": "SJL: ladrón irrumpió en iglesia evangélica y se llevó equipos y bienes valorizados en miles de soles [VIDEO]",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "SJL: ladrón irrumpió en iglesia evangélica y se llevó equipos y bienes valorizados en miles de soles [VIDEO]",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "60d8bc1d",
       "title_ja": "У подростка обнаружили память, которая превосходит возможности 99,9 % людей",
       "summary_ja": "",
@@ -910,12 +3380,12 @@
     },
     {
       "article_id": "df99de43",
-      "title_ja": "Bruce Mac Master publica carta y pretende atornillarse en la ANDI. ¿Qué hará con los afiliados que piensan distinto a él y con el presidente, que no lo recibirá?",
+      "title_ja": "Bruce Mac Master publica carta y pretende atornillarse en la Andi. ¿Qué hará con los afiliados que piensan distinto a él y con el presidente, que no lo recibirá?",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Bruce Mac Master publica carta y pretende atornillarse en la ANDI. ¿Qué hará con los afiliados que piensan distinto a él y con el presidente, que no lo recibirá?",
+      "key_phrase_original": "Bruce Mac Master publica carta y pretende atornillarse en la Andi. ¿Qué hará con los afiliados que piensan distinto a él y con el presidente, que no lo recibirá?",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -976,12 +3446,12 @@
     },
     {
       "article_id": "fde658c9",
-      "title_ja": "Pope Leo warns against AI and says technology ‘must remain at service of humans’ during first visit to France – Europe live",
+      "title_ja": "Pope Leo warns against AI and says technology ‘must remain at service of humans’ during first visit to France – as it happened",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Pope Leo warns against AI and says technology ‘must remain at service of humans’ during first visit to France – Europe live",
+      "key_phrase_original": "Pope Leo warns against AI and says technology ‘must remain at service of humans’ during first visit to France – as it happened",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -1019,6 +3489,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "0fed9ceb",
+      "title_ja": "Turkey, Pakistan, Saudi Arabia to hold talks after Houthi attacks",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Turkey, Pakistan, Saudi Arabia to hold talks after Houthi attacks",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "29ce9848",
       "title_ja": "EN VIVO | La Mañanera de la presidenta Claudia Sheinbaum hoy viernes 25 de septiembre: operativo contra huachicol en Guanajuato",
       "summary_ja": "",
@@ -1048,17 +3529,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Banco de Occidente firma crédito de USD 150 millones con entidad alemana",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "29fcf08f",
-      "title_ja": "La Justicia porteña presentó Senderos, un programa para jóvenes en contacto con la ley penal",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "La Justicia porteña presentó Senderos, un programa para jóvenes en contacto con la ley penal",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -1360,6 +3830,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "33137970",
+      "title_ja": "Bloques opositores ampliaron la denuncia contra el fiscal Iván Rodríguez en la Unicameral de Córdoba - derechadiario.com.ar",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Bloques opositores ampliaron la denuncia contra el fiscal Iván Rodríguez en la Unicameral de Córdoba - derechadiario.com.ar",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "1824a1fd",
       "title_ja": "Urbagestion niega haber pedido a Maricarmen el pago de una renta superior a la que abonaba",
       "summary_ja": "",
@@ -1404,13 +3885,24 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "d9ca4836",
-      "title_ja": "Nyoro accuses Ruto of planning to sell Kenya’s assets during UNGA trip",
+      "article_id": "7162741d",
+      "title_ja": "'UAE became her family': Hundreds turn up for funeral of mum who died giving birth",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Nyoro accuses Ruto of planning to sell Kenya’s assets during UNGA trip",
+      "key_phrase_original": "'UAE became her family': Hundreds turn up for funeral of mum who died giving birth",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d9ca4836",
+      "title_ja": "Nyoro accuses Ruto of plotting to sell Kenya’s assets during UNGA trip",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Nyoro accuses Ruto of plotting to sell Kenya’s assets during UNGA trip",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -1712,17 +4204,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "8d76ef61",
-      "title_ja": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "0bf866f9",
       "title_ja": "Capturado una pieza de la banda El Ignacio",
       "summary_ja": "",
@@ -1779,12 +4260,12 @@
     },
     {
       "article_id": "2eeef791",
-      "title_ja": "Beware of billionaires gifting Trojan Horses to steal your election data",
+      "title_ja": "Beware of billionaires gifting Trojan horses to steal your election data",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Beware of billionaires gifting Trojan Horses to steal your election data",
+      "key_phrase_original": "Beware of billionaires gifting Trojan horses to steal your election data",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -1807,6 +4288,28 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "KNEECAP viene a Bogotá y Móglaí Bap habla con Arcadia: “La fiesta y la política pueden ir de la mano”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "15944bdc",
+      "title_ja": "‘Big shoes to fill’: Zaheer Khan embraces CSK challenge as preparations for IPL 2027 begin",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "‘Big shoes to fill’: Zaheer Khan embraces CSK challenge as preparations for IPL 2027 begin",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "ccfc1901",
+      "title_ja": "British tourists take on India’s Spiti Valley in an auto-rickshaw",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "British tourists take on India’s Spiti Valley in an auto-rickshaw",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -1878,12 +4381,12 @@
     },
     {
       "article_id": "2630f311",
-      "title_ja": "Yamid Amat Serna se pronuncia sobre el estado salud de su padre, que está internado en la Fundación Santa Fe",
+      "title_ja": "Yamid Amat Serna se pronuncia sobre el estado de salud de su padre, que está internado en la Fundación Santa Fe",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Yamid Amat Serna se pronuncia sobre el estado salud de su padre, que está internado en la Fundación Santa Fe",
+      "key_phrase_original": "Yamid Amat Serna se pronuncia sobre el estado de salud de su padre, que está internado en la Fundación Santa Fe",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -2016,6 +4519,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Editors Conference: Gov Mbah says media, govt must meet at point of truth",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c2bc541f",
+      "title_ja": "Shehu Sani Demands Scrutiny Of Nigeria-US Mineral Deal",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Shehu Sani Demands Scrutiny Of Nigeria-US Mineral Deal",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -2229,6 +4743,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "84725a5a",
+      "title_ja": "UAE Floating Hospital provides prosthetic limbs to 42 injured Palestinians",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "UAE Floating Hospital provides prosthetic limbs to 42 injured Palestinians",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "e19e7a8a",
       "title_ja": "Delcy Rodríguez pide a venezolanos colaborar con el ahorro energético tras su llegada de NY",
       "summary_ja": "",
@@ -2285,12 +4810,12 @@
     },
     {
       "article_id": "9bac231f",
-      "title_ja": "Governo Lula reserva R$ 800 milhões no orçamento para reajustar bolsa de residentes médicos",
+      "title_ja": "Governo Lula reserva R$ 800 milhões no orçamento para reajustar bolsa de residentes médicos e multiprofissionais",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Governo Lula reserva R$ 800 milhões no orçamento para reajustar bolsa de residentes médicos",
+      "key_phrase_original": "Governo Lula reserva R$ 800 milhões no orçamento para reajustar bolsa de residentes médicos e multiprofissionais",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -2647,6 +5172,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "110cca79",
+      "title_ja": "Lawyer quits investment firm's Sh146bn case against KCB",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Lawyer quits investment firm's Sh146bn case against KCB",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "656665c1",
       "title_ja": "Arrêt de l’EPR de Flamanville pour un an : EDF remet le couvercle sur un réacteur mal né",
       "summary_ja": "",
@@ -2801,17 +5337,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "2b8ad64d",
-      "title_ja": "Labour rejects Declassified journalists from party conference for third year – UK politics live",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Labour rejects Declassified journalists from party conference for third year – UK politics live",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "143af1a9",
       "title_ja": "В Беларуси определили победителей республиканского конкурса туристических маршрутов",
       "summary_ja": "",
@@ -2940,6 +5465,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Federal Minister for Communications Abdul Aleem Khan attended 2nd International Investment Forum in Azerbaijan",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "839e9b48",
+      "title_ja": "\"¡Está fuera de su país!\": Cliente atacó y escupió a trabajadora en local de Las Condes",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "\"¡Está fuera de su país!\": Cliente atacó y escupió a trabajadora en local de Las Condes",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -3627,12 +6163,12 @@
     },
     {
       "article_id": "9ff3d4f6",
-      "title_ja": "В Гомеле заметили свой «Летучий голландец» - теплоход плыл по Сожу без экипажа и пассажиров. Чем закончилось его странствие",
+      "title_ja": "В Гомеле по Сожу плыл «Летучий голландец» без единого человека на борту. Прокуратура выяснила, как это произошло",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "В Гомеле заметили свой «Летучий голландец» - теплоход плыл по Сожу без экипажа и пассажиров. Чем закончилось его странствие",
+      "key_phrase_original": "В Гомеле по Сожу плыл «Летучий голландец» без единого человека на борту. Прокуратура выяснила, как это произошло",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -3655,6 +6191,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Washington must rejoin the Saudi war against the Houthis",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3b3e47c4",
+      "title_ja": "Court awards Sergeant-at-Arms Sh200,000 over delayed disciplinary case",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Court awards Sergeant-at-Arms Sh200,000 over delayed disciplinary case",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -4198,6 +6745,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "46c14fd3",
+      "title_ja": "Court of Appeal clears Fidelity Bank in fundamental rights case",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Court of Appeal clears Fidelity Bank in fundamental rights case",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "a4d70fb7",
       "title_ja": "Cayó la banda Floralita en Cali: así era como movían miles de dosis de droga entre menores de edad en parques y colegios",
       "summary_ja": "",
@@ -4309,12 +6867,12 @@
     },
     {
       "article_id": "8addd621",
-      "title_ja": "Дом с камином, дача у озера и квартиры. Какую недвижимость продают беларусы из-за переезда за границу",
+      "title_ja": "От этого жилья избавляются из-за релокации - где оно находится и какая стоимость. Составили подборку",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Дом с камином, дача у озера и квартиры. Какую недвижимость продают беларусы из-за переезда за границу",
+      "key_phrase_original": "От этого жилья избавляются из-за релокации - где оно находится и какая стоимость. Составили подборку",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -4370,6 +6928,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Белоусов проинспектировал группировку войск «Север»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "785e8de2",
+      "title_ja": "Ruto set for Coast tour featuring groundbreaking for Sh2 trillion Dangote refinery",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Ruto set for Coast tour featuring groundbreaking for Sh2 trillion Dangote refinery",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -4440,6 +7009,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "3a899b8f",
+      "title_ja": "Arrau dijo que el Escudo no es aún un tratado, y si llega a serlo, pasará por el Congreso",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Arrau dijo que el Escudo no es aún un tratado, y si llega a serlo, pasará por el Congreso",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "c70eb90b",
       "title_ja": "UK to probe air traffic control glitch that grounded thousands of flights",
       "summary_ja": "",
@@ -4469,17 +7049,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "De pareja a presunto captor: mujer habría sido secuestrada y sometida a todo tipo de vejámenes en una casa de Bogotá",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "8a8f3243",
-      "title_ja": "Leo XIV, Trying to Be Everyone’s Pope, Tours Secular France",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Leo XIV, Trying to Be Everyone’s Pope, Tours Secular France",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -4518,12 +7087,12 @@
     },
     {
       "article_id": "c8593445",
-      "title_ja": "Este es el único hotel de Colombia que se metió entre los 100 mejores del mundo en 2026; está a una hora de Cartagena",
+      "title_ja": "Este es el único hotel de Colombia que se metió entre los cien mejores del mundo en 2026; está a una hora de Cartagena",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Este es el único hotel de Colombia que se metió entre los 100 mejores del mundo en 2026; está a una hora de Cartagena",
+      "key_phrase_original": "Este es el único hotel de Colombia que se metió entre los cien mejores del mundo en 2026; está a una hora de Cartagena",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -4551,12 +7120,12 @@
     },
     {
       "article_id": "8a40fbfa",
-      "title_ja": "Suspect in 2022 Paris Killing of Argentine rugby star Aramburu begs forgiveness",
+      "title_ja": "Suspect in 2022 Paris murder of Argentine rugby star Aramburu begs forgiveness",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Suspect in 2022 Paris Killing of Argentine rugby star Aramburu begs forgiveness",
+      "key_phrase_original": "Suspect in 2022 Paris murder of Argentine rugby star Aramburu begs forgiveness",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -5518,6 +8087,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "b9815d5a",
+      "title_ja": "Jeffrey Donaldson could face more than 10 years in jail for child sexual abuse, court told",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Jeffrey Donaldson could face more than 10 years in jail for child sexual abuse, court told",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "1ae284cf",
       "title_ja": "Sifuna meets Kwale officials and aspirants ahead of 2027 polls",
       "summary_ja": "",
@@ -5734,6 +8314,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Ukraine’s Zelensky ‘urged Trump to enlist China’s help’ in ending Russia’s invasion",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c4018bac",
+      "title_ja": "De la Espriella desplegó agenda en Santa Marta luego del “paro armado” que dejó secuelas - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "De la Espriella desplegó agenda en Santa Marta luego del “paro armado” que dejó secuelas - El Espectador",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -6189,17 +8780,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "443572f9",
-      "title_ja": "Spagna, milionario Usa comunista e pro-Pal fatto arrestare da Trump a Ibiza. Ma la sinistra insorge",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Spagna, milionario Usa comunista e pro-Pal fatto arrestare da Trump a Ibiza. Ma la sinistra insorge",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "f4774789",
       "title_ja": "Kol-centar za informisanje građana o primeni Zakona o roditeljima-negovateljima",
       "summary_ja": "",
@@ -6251,6 +8831,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Один человек погиб при ударе ВСУ по рынку в Горловке",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "4ac189d9",
+      "title_ja": "Penis rings: An option for men with erectile dysfunction",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Penis rings: An option for men with erectile dysfunction",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -6449,6 +9040,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "「今ある力で投げ切れた」オリックス平野佳寿引退登板、プロ生活「しんどい方が勝ってる」",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "36136ece",
+      "title_ja": "Parliament urged to pass balanced Tobacco Bill amid industry concerns",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Parliament urged to pass balanced Tobacco Bill amid industry concerns",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -6977,6 +9579,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Federación Médica de Venezuela: \"95% de los hospitales tienen las puertas casi cerradas\"",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bfe751e2",
+      "title_ja": "Malpensa diventa \"Aeroporto Silvio Berlusconi\", Beppe Sala assente: \"Scusate, cosa avrei dovuto fare?\"",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Malpensa diventa \"Aeroporto Silvio Berlusconi\", Beppe Sala assente: \"Scusate, cosa avrei dovuto fare?\"",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -7890,6 +10503,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Santiago se convierte nuevamente en la capital de la radio hecha por jóvenes",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "c0baa423",
+      "title_ja": "Tema Gta 6 Collectors Box - derechadiario.com.ar",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Tema Gta 6 Collectors Box - derechadiario.com.ar",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -9731,6 +12355,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "626bef0c",
+      "title_ja": "Kalonzo takes fight to Nyanza, Western to counter Ruto gains",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Kalonzo takes fight to Nyanza, Western to counter Ruto gains",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "5fb175a6",
       "title_ja": "Murió a los 93 años Bob Pettit, primer MVP de la NBA",
       "summary_ja": "",
@@ -10552,6 +13187,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Entrepreneuriat féminin : comment dépasser les stéréotypes de genre ?",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "efe1700b",
+      "title_ja": "NTV, Nation FM to broadcast live Kenya v Eritrea Afcon qualifier",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "NTV, Nation FM to broadcast live Kenya v Eritrea Afcon qualifier",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -11920,6 +14566,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "ad2428f0",
+      "title_ja": "Security concern after mycar takeover - The Australian",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Security concern after mycar takeover - The Australian",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "bed04c43",
       "title_ja": "Ransomware recovery costing SA organisations R17m on average: report",
       "summary_ja": "",
@@ -12383,12 +15040,12 @@
     },
     {
       "article_id": "4a1ba265",
-      "title_ja": "Musique : des conférences à plein tube",
+      "title_ja": "«La musique, ça se partage» : des conférences à plein tube",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "Musique : des conférences à plein tube",
+      "key_phrase_original": "«La musique, ça se partage» : des conférences à plein tube",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -12779,12 +15436,12 @@
     },
     {
       "article_id": "859189cc",
-      "title_ja": "I feel betrayed’: the Croatians living near an illegal waste dump who took matters into their own hands",
+      "title_ja": "‘We don’t have time for more promises’: the Croatian town that took on an illegal waste dump",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "I feel betrayed’: the Croatians living near an illegal waste dump who took matters into their own hands",
+      "key_phrase_original": "‘We don’t have time for more promises’: the Croatian town that took on an illegal waste dump",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -14615,6 +17272,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "b53259a4",
+      "title_ja": "‘Irrefutable evidence’ links Afghan soil to terror attacks in Pakistan",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "‘Irrefutable evidence’ links Afghan soil to terror attacks in Pakistan",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "a9d36a2e",
       "title_ja": "Maroc : dans l’attente du choix du chef du gouvernement, les alliances prennent forme",
       "summary_ja": "",
@@ -14754,17 +17422,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Philippines accuses China of obstructing resupply mission in South China Sea",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "3cc4b3ce",
-      "title_ja": "Кто оказался за столом Трампа и Си в Белом доме",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Кто оказался за столом Трампа и Си в Белом доме",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -15165,6 +17822,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "09541542",
+      "title_ja": "أسعار النفط تتراجع عالميًا مع ترقب الأسواق هدنة بين أمريكا وإيران",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "أسعار النفط تتراجع عالميًا مع ترقب الأسواق هدنة بين أمريكا وإيران",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "fc746909",
       "title_ja": "アジア大会で兄を超える金　スケボーの永原依弦「めっちゃうれしい」",
       "summary_ja": "",
@@ -15253,6 +17921,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "7a16e614",
+      "title_ja": "Tarar decries 'political, terror crime nexus' in K-P, asks provincial govt to maintain law and order",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Tarar decries 'political, terror crime nexus' in K-P, asks provincial govt to maintain law and order",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "04cf4549",
       "title_ja": "В Минске Citroen сбил на пешеходном переходе мужчину, который перебегал дорогу с собакой",
       "summary_ja": "",
@@ -15293,6 +17972,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Police lay 115 additional charges on Sydney alleged childcare abuser",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e091ff71",
+      "title_ja": "«خبراء الضرائب» تطرح 3 سيناريوهات لمصير الضريبة العقارية على المصانع",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«خبراء الضرائب» تطرح 3 سيناريوهات لمصير الضريبة العقارية على المصانع",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -15414,6 +18104,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "On This Mexican Island, Raccoons Make and Play With Toys (and Also Sip Margaritas)",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6f4167c6",
+      "title_ja": "الكهرباء والتخطيط تبحثان استغلال البنية الأساسية لمحطات التوليد في تحلية مياه البحر",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "الكهرباء والتخطيط تبحثان استغلال البنية الأساسية لمحطات التوليد في تحلية مياه البحر",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -16716,6 +19417,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "663fa16e",
+      "title_ja": "أسعار النفط تنخفض وسط آمال التوصل لهدنة «أمريكية - إيرانية».. كم سجلت اليوم؟",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "أسعار النفط تنخفض وسط آمال التوصل لهدنة «أمريكية - إيرانية».. كم سجلت اليوم؟",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "61d3877d",
       "title_ja": "US signs deal to hand over diplomatic hub at Baghdad airport to Iraqi government",
       "summary_ja": "",
@@ -16723,6 +19435,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "US signs deal to hand over diplomatic hub at Baghdad airport to Iraqi government",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e424ba8b",
+      "title_ja": "Sony Music Australia’s mysterious 10-month CEO gap - The Australian",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Sony Music Australia’s mysterious 10-month CEO gap - The Australian",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -17343,6 +20066,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "9aa0c6a6",
+      "title_ja": "Fact check: Italian PM Meloni did not attend UNGA; viral video criticising Israel is from 2025",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Fact check: Italian PM Meloni did not attend UNGA; viral video criticising Israel is from 2025",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "2246ffcd",
       "title_ja": "Review: Karthik Subbaraj’s ‘Dorothy’ has to be seen to be believed",
       "summary_ja": "",
@@ -17537,6 +20271,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "How Trump's diplomatic week exposed the limits of his power",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "22a90a89",
+      "title_ja": "Why babysitter hid letter from murder detectives - The Australian",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Why babysitter hid letter from murder detectives - The Australian",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -17761,6 +20506,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "5080df8a",
+      "title_ja": "«دراسة»: مخاطر الأمن السيبرانى تتحول إلى تهديد هيكلى للاقتصاد والتوسع الرقمى",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«دراسة»: مخاطر الأمن السيبرانى تتحول إلى تهديد هيكلى للاقتصاد والتوسع الرقمى",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "16efe77d",
       "title_ja": "Trump-Xi Summit: 5 Takeaways From Their White House Meeting",
       "summary_ja": "",
@@ -17838,6 +20594,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "1db43c7c",
+      "title_ja": "Nadia Khan's gym questions overshadow Parishae Adnan's NYFW achievement",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Nadia Khan's gym questions overshadow Parishae Adnan's NYFW achievement",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "33124549",
       "title_ja": "Italy approves school decree banning burqa, capping foreign pupils",
       "summary_ja": "",
@@ -17845,17 +20612,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Italy approves school decree banning burqa, capping foreign pupils",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "a026a963",
-      "title_ja": "Iran Proposes 7-Day Plan to End War",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Iran Proposes 7-Day Plan to End War",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -17948,6 +20704,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "9d62a1d5",
+      "title_ja": "Cuando todo no sea nada - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Cuando todo no sea nada - El Espectador",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "00231cd5",
       "title_ja": "Следствие установило подозреваемых в халатности при организации учений на Каспии- генпрокуратура",
       "summary_ja": "",
@@ -17999,6 +20766,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "La cultura es un derecho - El Espectador",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f9e6dc08",
+      "title_ja": "Otra situación inconcebible - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Otra situación inconcebible - El Espectador",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -18069,6 +20847,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "e7a50246",
+      "title_ja": "Que la fiesta no espere al viernes - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Que la fiesta no espere al viernes - El Espectador",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "ccdcf4c2",
       "title_ja": "Sheikh Mohammed bin Rashid receives condolences over death of Sheikh Ahmed in call with Saudi Crown Prince",
       "summary_ja": "",
@@ -18076,6 +20865,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Sheikh Mohammed bin Rashid receives condolences over death of Sheikh Ahmed in call with Saudi Crown Prince",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3d5c2425",
+      "title_ja": "«قناة السويس» تدشن قاطرتين جديدتين وتوسع تصنيع الوحدات البحرية بسفاجا",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«قناة السويس» تدشن قاطرتين جديدتين وتوسع تصنيع الوحدات البحرية بسفاجا",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -18311,6 +21111,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "d45ac94c",
+      "title_ja": "البنك المركزى يثبت أسعار الفائدة للمرة الخامسة على التوالى",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "البنك المركزى يثبت أسعار الفائدة للمرة الخامسة على التوالى",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "31359ee9",
       "title_ja": "Trump welcomes China’s Xi with fanfare, but no breakthroughs emerge",
       "summary_ja": "",
@@ -18329,6 +21140,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Departamento en Arriendo en Estación Central 1 baño - Emol Propiedades",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "adae8f6e",
+      "title_ja": "إعادة هيكلة «الاستثمار القومى» بعد تسويات تاريخية بقيمة ٢٩٨.٨ مليار جنيه",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "إعادة هيكلة «الاستثمار القومى» بعد تسويات تاريخية بقيمة ٢٩٨.٨ مليار جنيه",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -18509,6 +21331,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "3e09b746",
+      "title_ja": "Aeroplano despega en la escena del rock en español con “Vagón”",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Aeroplano despega en la escena del rock en español con “Vagón”",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "ea4edda1",
       "title_ja": "Trump e Xi alla cena di Stato: “Fatta la storia, nuovo modello di convivenza”. Accesso negato ai giornalisti",
       "summary_ja": "",
@@ -18670,6 +21503,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "LHC seeks reports on Aleema Khan's detention, declines to suspend order",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "1b5e3fea",
+      "title_ja": "«التموين» تطرح ١٨ صنفًا جديدًا بمبادرة «خفض أسعار السلع» اليوم",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«التموين» تطرح ١٨ صنفًا جديدًا بمبادرة «خفض أسعار السلع» اليوم",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -18846,17 +21690,6 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Dezenas de milhares assistem à beatificação de Fulton Sheen em St. Louis",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
-      "article_id": "f9e6dc08",
-      "title_ja": "Otra situación inconcebible - El Espectador",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Otra situación inconcebible - El Espectador",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -19092,6 +21925,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "2ebd5175",
+      "title_ja": "«الجيزة» تبحث مع «المالية» إطلاق النموذج الوطنى للموازنة التشاركية",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«الجيزة» تبحث مع «المالية» إطلاق النموذج الوطنى للموازنة التشاركية",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "cf9ab643",
       "title_ja": "PM Shehbaz invites US businesses to invest in country's agriculture, mining, IT, AI",
       "summary_ja": "",
@@ -19253,6 +22097,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Fuel Relief with a Vision: A People-Centred Initiative for a Resilient Pakistan",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "35432979",
+      "title_ja": "«رجال الأعمال» تقود تحالفًا لتمثيل القطاع الخاص فى «مكافحة التصحر»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«رجال الأعمال» تقود تحالفًا لتمثيل القطاع الخاص فى «مكافحة التصحر»",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -20083,12 +22938,12 @@
     },
     {
       "article_id": "d615c5b1",
-      "title_ja": "FM Dar reviews Makkah pact implementation with Saudi, Turkish counterparts",
+      "title_ja": "Pakistan, Saudi Arabia, Turkiye condemn attacks on Makkah, discuss joint military support",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "FM Dar reviews Makkah pact implementation with Saudi, Turkish counterparts",
+      "key_phrase_original": "Pakistan, Saudi Arabia, Turkiye condemn attacks on Makkah, discuss joint military support",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -20155,6 +23010,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "‘Apoiar Flávio Bolsonaro é ser conivente com a corrupção e a lavagem de dinheiro’, diz cientista político",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "8358e89e",
+      "title_ja": "Con científicos colombianos, arman el rompecabezas de la historia de los murciélagos - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Con científicos colombianos, arman el rompecabezas de la historia de los murciélagos - El Espectador",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -20303,12 +23169,12 @@
     },
     {
       "article_id": "e9ab368f",
-      "title_ja": "China helping Iran would be ‘totally unacceptable,’ Trump told Xi during visit: US ambassador",
+      "title_ja": "UN Security Council condemns Houthi attacks on Saudi Arabia",
       "summary_ja": "",
       "tags": [],
       "stance": "neutral",
       "stance_reason": "AI未適用",
-      "key_phrase_original": "China helping Iran would be ‘totally unacceptable,’ Trump told Xi during visit: US ambassador",
+      "key_phrase_original": "UN Security Council condemns Houthi attacks on Saudi Arabia",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -21919,6 +24785,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "b904f311",
+      "title_ja": "خلال 5 جلسات.. الأموال الساخنة تنعش خزينة البنك المركزي بـ 1.4 مليار دولار",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "خلال 5 جلسات.. الأموال الساخنة تنعش خزينة البنك المركزي بـ 1.4 مليار دولار",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "bb4639db",
       "title_ja": "BRNABIĆ RAZVALILA NA N1 BLOKADERKU MIRJANU NIKOLIĆ! U lice joj je sasula istinu - bavljenje politikom na fakultetima je ZABRANjENO (VIDEO)",
       "summary_ja": "",
@@ -23151,6 +26028,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "5c34815c",
+      "title_ja": "تنفيذًا للتكليف الرئاسى بإخلاء الموانئ.. بيع 42 لوط من مهمل ورواكد الجمارك بـ44.1 مليون جنيه",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "تنفيذًا للتكليف الرئاسى بإخلاء الموانئ.. بيع 42 لوط من مهمل ورواكد الجمارك بـ44.1 مليون جنيه",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "6e4f6799",
       "title_ja": "Nach Richterspruch - Weißes Haus lässt CNN-Reporter wieder zu",
       "summary_ja": "",
@@ -23217,6 +26105,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "a83b8b65",
+      "title_ja": "وزير البترول: 6.1 مليار جنيه استثمارات بشبكات الغاز الرئيسية والاستهلاك يقفز 12.7% خلال الصيف",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "وزير البترول: 6.1 مليار جنيه استثمارات بشبكات الغاز الرئيسية والاستهلاك يقفز 12.7% خلال الصيف",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "8d3591bc",
       "title_ja": "Presidente De la Espriella ganó tutela que le ordenaba no caminar entre muertos en combates - El Espectador",
       "summary_ja": "",
@@ -23224,6 +26123,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Presidente De la Espriella ganó tutela que le ordenaba no caminar entre muertos en combates - El Espectador",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "baa4ba24",
+      "title_ja": "«بينهم 621 قطاعًا للتنقيب عن الذهب».. تحديد موعد إعلان نتائج مزايدة التعدين الجديدة",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«بينهم 621 قطاعًا للتنقيب عن الذهب».. تحديد موعد إعلان نتائج مزايدة التعدين الجديدة",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -23327,17 +26237,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "81c1e54a",
-      "title_ja": "Politico: Ukraine’s sanctions adviser urges EU sanctions on Russian billionaires Vladimir Potanin and Vladimir Lisin after Mikhail Fridman and Alisher Usmanov are delisted",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Politico: Ukraine’s sanctions adviser urges EU sanctions on Russian billionaires Vladimir Potanin and Vladimir Lisin after Mikhail Fridman and Alisher Usmanov are delisted",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "cc17037d",
       "title_ja": "Régimen sube el precio del pasaporte de los emigrados ocho meses después de negar su aumento - Cubanet",
       "summary_ja": "",
@@ -23345,6 +26244,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Régimen sube el precio del pasaporte de los emigrados ocho meses después de negar su aumento - Cubanet",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "81c1e54a",
+      "title_ja": "Politico: Ukraine’s sanctions adviser urges EU sanctions on Russian billionaires Vladimir Potanin and Vladimir Lisin after Mikhail Fridman and Alisher Usmanov are delisted",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Politico: Ukraine’s sanctions adviser urges EU sanctions on Russian billionaires Vladimir Potanin and Vladimir Lisin after Mikhail Fridman and Alisher Usmanov are delisted",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -23389,6 +26299,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Zelensky says the Trump administration proposes a halt to energy strikes, a Black Sea grain corridor, and three-way talks with Russia",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "7eb7bc8a",
+      "title_ja": "هل ترتفع أسعار البنزين مساء اليوم؟.. البترول تكشف",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "هل ترتفع أسعار البنزين مساء اليوم؟.. البترول تكشف",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -23558,6 +26479,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "84e6c4e0",
+      "title_ja": "بالأرقام.. وزير البترول يعلن حجم استهلاك البنزين والسولار في مصر ويكشف خطة تأمين إمدادات الصيف",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "بالأرقام.. وزير البترول يعلن حجم استهلاك البنزين والسولار في مصر ويكشف خطة تأمين إمدادات الصيف",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "bf523a0a",
       "title_ja": "Delegierte buhen Netanjahu aus und verlassen Saal – „Moralische Feiglinge“, sagt Israels Premier",
       "summary_ja": "",
@@ -23657,6 +26589,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "54fbc78d",
+      "title_ja": "قرار عاجل من «الرقابة المالية» بشأن انتظام سداد عملاء شركات التقسيط",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "قرار عاجل من «الرقابة المالية» بشأن انتظام سداد عملاء شركات التقسيط",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "3f1794cd",
       "title_ja": "Magola - El Espectador",
       "summary_ja": "",
@@ -23675,6 +26618,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Bengaluru emerges as a new destination for Rohingyas evicted from Jammu: Read how a Muslim man is seeking shelter for hundreds of illegal immigrants",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "9397772a",
+      "title_ja": "وزير البترول يُعلن بدء مسح جوي شامل لتحديد أماكن المعادن بمصر",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "وزير البترول يُعلن بدء مسح جوي شامل لتحديد أماكن المعادن بمصر",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -23987,6 +26941,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "e4d590ea",
+      "title_ja": "Miguel Torres cuestiona demora de Diputados en pedido de facultades y explica límites del Senado para modificarlo",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Miguel Torres cuestiona demora de Diputados en pedido de facultades y explica límites del Senado para modificarlo",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "da6153b4",
       "title_ja": "Alan Jones on Trial: An unexpected change in the prosecution's case | Week 8 – video",
       "summary_ja": "",
@@ -24174,6 +27139,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "db6acc1d",
+      "title_ja": "في أسبوع حسم سعر الفائدة.. 3 عوامل تضغط على مؤشرات البورصة وتوقع بارتداد",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "في أسبوع حسم سعر الفائدة.. 3 عوامل تضغط على مؤشرات البورصة وتوقع بارتداد",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "1ac764b0",
       "title_ja": "Rush Hour: Rahul Gandhi tells CEC to ‘turn approver’, journalist Ravi Nair gets bail and more",
       "summary_ja": "",
@@ -24302,6 +27278,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Tokayev Expresses Condolences Over Deaths of Service Members in Caspian Sea",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "e1f3753d",
+      "title_ja": "بعد الكهربائية.. مبيعات السيارات الصينية الهجينة بأوروبا تعمق جراح شركات «القارة العجوز»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "بعد الكهربائية.. مبيعات السيارات الصينية الهجينة بأوروبا تعمق جراح شركات «القارة العجوز»",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -24460,6 +27447,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "cdb76a36",
+      "title_ja": "البنك المركزى يقرر تثبيت أسعار الفائدة دون تغيير",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "البنك المركزى يقرر تثبيت أسعار الفائدة دون تغيير",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "a7955a24",
       "title_ja": "Timonel PPD dice que balance de gira a EE.UU. es \"bueno\" y destaca posibilidad de hablar de \"todo\" con Kast - Emol",
       "summary_ja": "",
@@ -24537,6 +27535,28 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "cc9a07c0",
+      "title_ja": "«التخطيط» تبحث مع بنك الاستثمار الأوروبى التوسع فى «التمويل المبتكر»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«التخطيط» تبحث مع بنك الاستثمار الأوروبى التوسع فى «التمويل المبتكر»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "a660556d",
+      "title_ja": "قبل ساعات من اجتماع البنك المركزى.. موجة شراء أجنبية فى الأموال الساخنة اليوم الخميس والدولار يخالف الاتجاه (تفاصيل)",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "قبل ساعات من اجتماع البنك المركزى.. موجة شراء أجنبية فى الأموال الساخنة اليوم الخميس والدولار يخالف الاتجاه (تفاصيل)",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "48a8e65f",
       "title_ja": "Plus de 400 cas de choléra enregistrés à Pweto sur fond de pénurie d’eau potable",
       "summary_ja": "",
@@ -24544,6 +27564,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Plus de 400 cas de choléra enregistrés à Pweto sur fond de pénurie d’eau potable",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "074dcabe",
+      "title_ja": "بحضور وزير الاستثمار.. «شباب الأعمال» تنظم ملتقى لبحث فرص زيادة التجارة والاستثمارات بالقارة",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "بحضور وزير الاستثمار.. «شباب الأعمال» تنظم ملتقى لبحث فرص زيادة التجارة والاستثمارات بالقارة",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -24599,6 +27630,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Dos jornadas, cuatro horas y la última palabra tras el debate Municipal: las respuesta de los candidatos para la alcaldía de Lima Metropolitana 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "906b58ea",
+      "title_ja": "وزير الصناعة يتفقد مصنعين لإنتاج الكربون الأسود والإطارات التجارية بالإسكندرية",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "وزير الصناعة يتفقد مصنعين لإنتاج الكربون الأسود والإطارات التجارية بالإسكندرية",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -25087,6 +28129,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "80801642",
+      "title_ja": "قفزة فى إيرادات «القلعة» بمعدل 52% خلال النصف الأول من 2026 لتسجل 94.7 مليار جنيه",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "قفزة فى إيرادات «القلعة» بمعدل 52% خلال النصف الأول من 2026 لتسجل 94.7 مليار جنيه",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "43c064f5",
       "title_ja": "Hurricane Polo drenches Mexico’s coast as Tropical Storm Nolo nears Hawaii",
       "summary_ja": "",
@@ -25105,6 +28158,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Mexico shuts Pacific ports as Hurricane Polo churns offshore",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0e4e2452",
+      "title_ja": "البرميل يزيد على 100 دولار.. النفط يقفز بأكثر من 2% وسط تعثر محادثات أمريكا وإيران",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "البرميل يزيد على 100 دولار.. النفط يقفز بأكثر من 2% وسط تعثر محادثات أمريكا وإيران",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -25292,6 +28356,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "映画監督の舛田利雄さん死去　石原裕次郎主演「錆びたナイフ」など",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "0c663ec0",
+      "title_ja": "المجلس الوطنى للذكاء الاصطناعى يناقش تعزيز قدرات مصر فى الحوسبة الكمومية",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "المجلس الوطنى للذكاء الاصطناعى يناقش تعزيز قدرات مصر فى الحوسبة الكمومية",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -25582,6 +28657,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "e8f9023b",
+      "title_ja": "«التخطيط»: إنهاء 90% من التشابكات المالية التاريخية لبنك الاستثمار القومى بقيمة 298.8 مليار جنيه",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«التخطيط»: إنهاء 90% من التشابكات المالية التاريخية لبنك الاستثمار القومى بقيمة 298.8 مليار جنيه",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "7e4ff0be",
       "title_ja": "Ed Sheeran loses almost 500,000 Instagram followers amid Macklemore row",
       "summary_ja": "",
@@ -25648,6 +28734,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "c6c15fcf",
+      "title_ja": "الأوروبي لإعادة الإعمار يخفض توقعاته لنمو الاقتصاد المصري إلى 4.6% خلال 2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "الأوروبي لإعادة الإعمار يخفض توقعاته لنمو الاقتصاد المصري إلى 4.6% خلال 2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "5879a4a2",
       "title_ja": "Nigella Lawson and ‘The Great British Bake Off’ Is a Winning Recipe",
       "summary_ja": "",
@@ -25677,6 +28774,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Iran judiciary charges six officers over teen abuse but omits sexual assault allegation",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "bcf3c6c7",
+      "title_ja": "«رجال الأعمال» تقود تحالفاً لتمثيل القطاع الخاص فى اتفاقية مكافحة التصحر",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«رجال الأعمال» تقود تحالفاً لتمثيل القطاع الخاص فى اتفاقية مكافحة التصحر",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -25747,6 +28855,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "8ca6d8a5",
+      "title_ja": "البنك المركزى يحسم مصير أسعار الفائدة اليوم",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "البنك المركزى يحسم مصير أسعار الفائدة اليوم",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "00f74b95",
       "title_ja": "На Каспии военнослужащих унесло в море во время учений, погибли девять человек",
       "summary_ja": "",
@@ -25780,6 +28899,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "623c4b00",
+      "title_ja": "هل يؤثر قرار سعر الفائدة على اتجاه سعر الذهب؟.. 3 عوامل تحسم الأسعار (تقرير)",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "هل يؤثر قرار سعر الفائدة على اتجاه سعر الذهب؟.. 3 عوامل تحسم الأسعار (تقرير)",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "02e2fcdb",
       "title_ja": "Beijingers eye Xi-Trump summit for trade relief, stable ties",
       "summary_ja": "",
@@ -25809,6 +28939,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "CIA warned Italy, Spain and France of possible Russian drone attacks, Spanish media reports",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "103abb64",
+      "title_ja": "27 سفينة متنوعة يستقبلها ميناء دمياط اليوم",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "27 سفينة متنوعة يستقبلها ميناء دمياط اليوم",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -26506,6 +29647,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "23760b06",
+      "title_ja": "انخفاض عالمي الآن.. سعر الذهب اليوم الخميس 24-9-2026",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "انخفاض عالمي الآن.. سعر الذهب اليوم الخميس 24-9-2026",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "db41007c",
       "title_ja": "В Жамбылской области пресечена деятельность преступной группы, подозреваемой в вымогательстве денег у водителей на границе",
       "summary_ja": "",
@@ -26682,6 +29834,28 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "ca7e4786",
+      "title_ja": "تبدأ من اليوم والاستعلام بـ«SMS».. الإعلان عن نتائج الطرح الأول للأراضى الصناعية بـ«الإيجار المنتهى بالتملك»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "تبدأ من اليوم والاستعلام بـ«SMS».. الإعلان عن نتائج الطرح الأول للأراضى الصناعية بـ«الإيجار المنتهى بالتملك»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "d296744c",
+      "title_ja": "قبل ساعات من حسم أسعار الفائدة.. «المركزي» يسحب 536.9 مليار جنيه سيولة من البنوك لمواجهة التضخم",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "قبل ساعات من حسم أسعار الفائدة.. «المركزي» يسحب 536.9 مليار جنيه سيولة من البنوك لمواجهة التضخم",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "8a4f3f65",
       "title_ja": "No car needed: How Etihad Rail links to Dubai Metro's Red Line",
       "summary_ja": "",
@@ -26821,6 +29995,28 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Job Creation Seen as Key to Lowering Commodity Prices - Global New Light Of Myanmar",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "98f40399",
+      "title_ja": "منتدى السياسات للجمعية الاقتصادية المصرية يناقش «الادخار المحلى والقومى»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "منتدى السياسات للجمعية الاقتصادية المصرية يناقش «الادخار المحلى والقومى»",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "3ef39160",
+      "title_ja": "«رستم» يبحث مع وفد البنك الدولى إطلاق «ضمان تمويل مشروعات البنية التحتية»",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "«رستم» يبحث مع وفد البنك الدولى إطلاق «ضمان تمويل مشروعات البنية التحتية»",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -27166,17 +30362,6 @@
       "enriched_by": "passthrough"
     },
     {
-      "article_id": "f1334edc",
-      "title_ja": "Encuentran a cuatro manatíes muertos en el Caño San Silvestre, Barrancabermeja - El Espectador",
-      "summary_ja": "",
-      "tags": [],
-      "stance": "neutral",
-      "stance_reason": "AI未適用",
-      "key_phrase_original": "Encuentran a cuatro manatíes muertos en el Caño San Silvestre, Barrancabermeja - El Espectador",
-      "key_phrase_ja": "",
-      "enriched_by": "passthrough"
-    },
-    {
       "article_id": "8223aff1",
       "title_ja": "Threats and counter-threats complicate new US-Iran diplomacy",
       "summary_ja": "",
@@ -27393,6 +30578,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "China, U.S. extend trade truce as Xi receives rare planeside welcome from Trump",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "f1334edc",
+      "title_ja": "Encuentran a cuatro manatíes muertos en el Caño San Silvestre, Barrancabermeja - El Espectador",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Encuentran a cuatro manatíes muertos en el Caño San Silvestre, Barrancabermeja - El Espectador",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -28328,6 +31524,17 @@
       "stance": "neutral",
       "stance_reason": "AI未適用",
       "key_phrase_original": "Hong Kong considers heavier fines for pet abandonment following fatal Yuen Long dog attack",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
+      "article_id": "6131d1e7",
+      "title_ja": "Trip Habibi Tourism expands desert safari lineup with morning, evening, overnight, Private Tours",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Trip Habibi Tourism expands desert safari lineup with morning, evening, overnight, Private Tours",
       "key_phrase_ja": "",
       "enriched_by": "passthrough"
     },
@@ -30807,6 +34014,17 @@
       "enriched_by": "passthrough"
     },
     {
+      "article_id": "790908dd",
+      "title_ja": "Visa a Estados Unidos Archivos - Cubanet",
+      "summary_ja": "",
+      "tags": [],
+      "stance": "neutral",
+      "stance_reason": "AI未適用",
+      "key_phrase_original": "Visa a Estados Unidos Archivos - Cubanet",
+      "key_phrase_ja": "",
+      "enriched_by": "passthrough"
+    },
+    {
       "article_id": "666d5f94",
       "title_ja": "RDC : l’opposition dans le piège du dialogue national",
       "summary_ja": "",
@@ -31611,7 +34829,8 @@
     }
   ],
   "notes": [
-    "2873件を素通しにしました: 後回しの再挑戦 2回 でも混雑が解消しませんでした",
-    "AIを適用できた記事が0件のため degraded にしました"
+    "3004件を素通しにしました: 後回しの再挑戦 2回 でも混雑が解消しませんでした",
+    "147件はAIの結果が不正だったため素通しにしました",
+    "使ったモデル: gemini-3.1-flash-lite×1"
   ]
 }
