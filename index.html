@@ -546,6 +546,14 @@ table.phrase tr:hover td{background:#fafbfd}
           <p class="mt-caution">⚠ 国営メディアの主張をそのまま掲載しています。<b>媒体属性ラベルを必ずご確認ください。</b>本サイトは各媒体の主張の当否を判断していません。</p>
         </div>
         <div class="filter-block">
+          <div class="filter-label">政治的傾向<button class="reset" data-reset="lean">解除</button></div>
+          <div class="chips" id="fLean"></div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-label">政府との関係<button class="reset" data-reset="gov">解除</button></div>
+          <div class="chips" id="fGov"></div>
+        </div>
+        <div class="filter-block">
           <div class="filter-label">並び替え（当サイト独自指標）</div>
           <div class="sort-group" id="fSort">
             <button data-sort="countries" aria-pressed="true">報道国数順</button>
@@ -721,7 +729,7 @@ const state = {
   date: null,
   calYear: null, calMonth: null,
   sort: "countries",
-  fCountry: new Set(), fTag: new Set(), fMedia: new Set(),
+  fCountry: new Set(), fTag: new Set(), fMedia: new Set(), fLean: new Set(), fGov: new Set(),
   expand: { world:false, japan:false },
   index: null,        // data/index.json
   days: {},           // 全月シャードをマージした { "YYYY-MM-DD": {status,articles,...} }
@@ -801,6 +809,8 @@ function passFilter(t){
     const types=new Set([...(t.phrases||[]).map(p=>p.media_type), ...(t.articles||[]).map(a=>a.media_type)]);
     if(![...state.fMedia].some(m=>types.has(m))) return false;
   }
+  if(state.fLean.size && !(t.articles||[]).some(a=>state.fLean.has(a.lean))) return false;
+  if(state.fGov.size && !(t.articles||[]).some(a=>state.fGov.has(a.gov_axis))) return false;
   return true;
 }
 
@@ -1308,6 +1318,12 @@ function renderFilters(){
     ? usedTags.map(g=>`<button class="chip" data-f="tag" data-v="${esc(g)}" aria-pressed="${state.fTag.has(g)}">${esc(g)}</button>`).join("")
     : `<span class="hint">${isDegraded()?"この日はタグが付与されていません（AI処理が未適用のため）":"この日はタグが付与されていません"}</span>`;
 
+  const usedLeans=[...new Set(pool.flatMap(t=>(t.articles||[]).map(a=>a.lean).filter(Boolean)))].sort();
+  const usedGov=[...new Set(pool.flatMap(t=>(t.articles||[]).map(a=>a.gov_axis).filter(Boolean)))].sort();
+  const extraFilter=(id,key,values,labels)=>{ const el=$(id); if(!el) return; const set=key==='lean'?state.fLean:state.fGov; el.innerHTML=values.map(v=>`<button class="chip" data-f="${key}" data-v="${esc(v)}" aria-pressed="${set.has(v)}">${esc(labels[v]||v)}</button>`).join("")||`<span class="hint">なし</span>`; };
+  extraFilter("#fLean","lean",usedLeans,{left:"左派",center:"中道",right:"右派",na:"未分類"});
+  extraFilter("#fGov","gov",usedGov,{pro_gov:"親政府",indep:"独立",anti_gov:"反政府",na:"未分類"});
+
   const usedMt=[...new Set(pool.flatMap(t=>[...(t.phrases||[]).map(p=>p.media_type),...(t.articles||[]).map(a=>a.media_type)]))]
     .filter(m=>MEDIA_TYPES[m]);
   const mtOrder=["state","public","private","indep","gov"].filter(m=>usedMt.includes(m));
@@ -1317,7 +1333,7 @@ function renderFilters(){
 
   document.querySelectorAll("[data-f]").forEach(b=>{
     b.addEventListener("click",()=>{
-      const set = b.dataset.f==="country"?state.fCountry : b.dataset.f==="tag"?state.fTag : state.fMedia;
+      const set = b.dataset.f==="country"?state.fCountry : b.dataset.f==="tag"?state.fTag : b.dataset.f==="lean"?state.fLean : b.dataset.f==="gov"?state.fGov : state.fMedia;
       const v=b.dataset.v;
       if(set.has(v)) set.delete(v); else set.add(v);
       b.setAttribute("aria-pressed", set.has(v)?"true":"false");
@@ -1330,7 +1346,7 @@ function bindStaticControls(){
     b.addEventListener("click",e=>{
       e.preventDefault();
       const k=b.dataset.reset;
-      (k==="country"?state.fCountry:k==="tag"?state.fTag:state.fMedia).clear();
+      (k==="country"?state.fCountry:k==="tag"?state.fTag:k==="lean"?state.fLean:k==="gov"?state.fGov:state.fMedia).clear();
       document.querySelectorAll(`[data-f="${k}"]`).forEach(c=>c.setAttribute("aria-pressed","false"));
       renderLists(); renderJpNone();
     });
