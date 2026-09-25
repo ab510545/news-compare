@@ -894,13 +894,14 @@ function warningText(info){
   return `一部媒体の取得に失敗（取得成功 ${info.feeds_ok||0} / ${info.feeds_total||0} フィード）`;
 }
 function warningDetail(info){
-  /* alerts[] の実形は {feed_id, source, status, note}（契約§4・①の実出力）。
-     古い message/msg 形式も一応拾うが、JSON の生文字列は画面に出さない。 */
+  /* alerts[] の実形は {feed_id, source, country, status, error, note}。
+     失敗フィードは「取得失敗・今回の取得対象外」と明示し、代替媒体で補完しない。 */
   const al=(info.alerts||[]).map(a=>{
     if(typeof a==="string") return a;
     if(!a) return "";
-    const who=[a.source,a.feed_id&&a.feed_id!=="-"&&a.feed_id!=="*"?`(${a.feed_id})`:""].filter(Boolean).join("");
-    const body=a.note||a.message||a.msg||"";
+    const who=[a.source,a.country?`[${a.country}]`:"",a.feed_id&&a.feed_id!=="-"&&a.feed_id!=="*"?`(${a.feed_id})`:""].filter(Boolean).join(" ");
+    const failed = a.status === "failed";
+    const body=failed ? `取得失敗・今回の取得対象外${a.error?`（${a.error}）`:""}` : (a.note||a.message||a.msg||"");
     const st=a.status?`[${a.status}]`:"";
     return [who,st,body].filter(Boolean).join(" ");
   }).filter(Boolean);
