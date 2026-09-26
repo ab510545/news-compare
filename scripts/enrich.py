@@ -116,7 +116,7 @@ PACE_SEC = 6.0
 
 # 1回の実行でAI処理に使ってよい実時間（秒）。GitHub Actions の timeout-minutes: 60 より十分短く。
 # 超えたら残りは素通しで書き出す（翌回・翌日に前回結果の再利用で埋まる）。
-DEADLINE_SEC = 25 * 60
+DEADLINE_SEC = 60 * 60
 
 
 def configured_models(models=None):
