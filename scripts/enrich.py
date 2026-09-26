@@ -51,6 +51,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -79,15 +80,17 @@ MODEL = DEFAULT_MODELS[0]   # 後方互換（ログ表示・テスト用）。�
 
 # 1リクエストにまとめる記事数。
 #   大きくするとリクエスト数は減るが、1件の壊れたレスポンスで巻き込む記事が増える。
-BATCH_SIZE = 10
+#   36カ国化で1日 700〜2,000件になるため 25件にした（740件→30本、2,000件→60本で頭打ち）。
+BATCH_SIZE = 25
 
 # 1日に出してよいHTTPリクエストの上限（リトライ・モデル切替も含めて数える）。
-#   通常は20本前後で終わる。503が多い日に再送・切替・後回しの再挑戦を行う余裕を持たせる。
-#   無料枠は1モデルあたり1日数百回あるので、60本でも十分安全側。
-REQUEST_BUDGET = 60
+#   通常は30〜60本で終わる。503が多い日に再送・切替・後回しの再挑戦を行う余裕を持たせる。
+#   無料枠は1モデルあたり1日数百回あり、モデル3つに分散するので150本でも安全側。
+REQUEST_BUDGET = 150
 
-# 通常バッチ（リトライを除く）の本数の上限。
-MAX_BATCHES = 20
+# 通常バッチ（リトライを除く）の本数の上限。超える件数の日は1バッチの件数を増やす。
+#   60本 × PACE_SEC 6秒 = 6分。締切25分の内側に収まる。
+MAX_BATCHES = 60
 
 # --- 503（混雑）対策 ---
 OVERLOAD_TRIES = 2              # 同じモデルで503が何回続いたら次のモデルに替えるか
@@ -136,10 +139,19 @@ def configured_models(models=None):
 ALLOWED_TAGS = (
     "政治", "経済", "安全保障", "外交", "気候", "人権",
     "科学技術", "保健", "社会", "文化", "スポーツ", "災害",
+    # 話題タグ（36カ国化で追加）
+    "エネルギー", "資源・鉱物", "貿易・関税", "紛争・軍事", "選挙", "移民・難民",
 )
 MAX_TAGS = 3                # 契約§3「1〜3個」
 
 ALLOWED_STANCES = ("support", "critical", "neutral")
+
+# レアメタル専用欄（minerals）の語彙。tags の「資源・鉱物」より細かい粒度で比較するためのもの。
+ALLOWED_MINERALS = (
+    "リチウム", "コバルト", "ニッケル", "レアアース", "グラファイト", "ガリウム",
+    "ゲルマニウム", "タングステン", "マンガン", "白金族", "ニオブ", "アンチモン",
+)
+MAX_MINERALS = 4
 
 # 出力する記事1件のキー。契約§3 のとおり。ここに無いキーは出さない（C1の担保）。
 ARTICLE_FIELDS = (
@@ -152,6 +164,7 @@ ARTICLE_FIELDS = (
     "key_phrase_original",
     "key_phrase_ja",
     "enriched_by",
+    "minerals",       # 契約§3 への追加欄。全記事に必ず入る（無ければ []）
 )
 
 # 本文が入りうるキー。1つでも出力に現れたら設計違反なので実行時に止める（C1・A1）。
@@ -375,6 +388,8 @@ def passthrough_article(article):
         "key_phrase_original": title,
         "key_phrase_ja": "",
         "enriched_by": BY_PASSTHROUGH,
+        # AIが無くても語句辞書で拾える分は付ける（見出しに明示された鉱物名だけなので捏造にはならない）。
+        "minerals": detect_minerals(title),
     }
 
 
@@ -439,7 +454,7 @@ def looks_speculative(text):
 
 
 def normalize_tags(value):
-    """tags を固定12タグ集合の中だけに絞る（契約§3・要件6）。
+    """tags を固定18タグ集合の中だけに絞る（契約§3・要件6）。
 
     集合外の語（"Politics"、"IT" など）は**捨てる**。近い意味に寄せる変換はしない。
     勝手な対応表を作ると、画面のフィルタが契約と食い違う原因になる。
@@ -463,6 +478,73 @@ def normalize_stance(value):
     if isinstance(value, str) and value.strip().lower() in ALLOWED_STANCES:
         return value.strip().lower()
     return "neutral"
+
+
+def normalize_minerals(value):
+    """minerals を語彙（ALLOWED_MINERALS）内だけに絞る。重複除去・最大 MAX_MINERALS 個。
+
+    normalize_tags と同じく、語彙外は寄せずに捨てる（"lithium" → リチウム の変換もしない）。
+    """
+    if not isinstance(value, list):
+        return []
+    out = []
+    for item in value:
+        if not isinstance(item, str):
+            continue
+        item = item.strip()
+        if item in ALLOWED_MINERALS and item not in out:
+            out.append(item)
+        if len(out) >= MAX_MINERALS:
+            break
+    return out
+
+
+# 語句辞書（AIなしでも minerals を付けるため）。鉱物ごとに (ラテン文字, キリル語幹, CJK・かな)。
+#   ラテン文字: 前後とも語境界（(?<!\w) と (?!\w)、Unicode の \w なので í/ê なども語の一部）。
+#     → undermining / illumine / Nickelodeon は拾わない。複数形・言語差は個別に書く。
+#   キリル: 格変化が多いので語頭境界＋語幹の前方一致。語頭を見るので политика の лити は拾わない。
+#   CJK・かな: 語境界が無いので部分一致。
+#   "mining" "metals" のような広い語は入れない（どの鉱物か分からない）。
+_MINERAL_TERMS = (
+    ("リチウム", r"lithium|litio|lítio", r"лити", r"锂|鋰|リチウム"),
+    # "Cobalt Strike" は攻撃ツール名でサイバー記事に頻出するので除外。
+    ("コバルト", r"cobalt(?!\s+strike)|cobalto", r"кобальт", r"钴|鈷|コバルト"),
+    # "nickel-and-dime"（けちくさい、の慣用句）は除外。単独の "a nickel"（硬貨）は見分けられないので拾う。
+    ("ニッケル", r"nickels?(?![-\s]+and[-\s]+dim)|níquel|niquel", r"никел", r"镍|鎳|ニッケル"),
+    ("レアアース", r"rare[-\s]earths?|terres?\s+rares?|tierras?\s+raras?|terras?\s+raras?",
+     r"редкоземельн", r"稀土|レアアース"),
+    ("グラファイト", r"graphite|grafito|grafite", r"графит", r"石墨|グラファイト|黒鉛"),
+    ("ガリウム", r"gallium|galio|gálio", r"галли", r"镓|ガリウム"),
+    # Германия（ドイツ）は германий の属格 германия と同形なので、衝突しない形（-й, -ем, -ев…）だけ拾う。
+    ("ゲルマニウム", r"germanium|germanio|germânio", r"германи(?:й|ем|ев)", r"锗|ゲルマニウム"),
+    ("タングステン", r"tungsten|wolfram|wolframio|tungsteno|tungstênio|tungstène|volfr\w*",
+     r"вольфрам", r"钨|タングステン"),
+    ("マンガン", r"manganese|manganeso|manganês|manganèse", r"марган", r"锰|マンガン"),
+    ("白金族", r"platinum|palladium|rhodium|pgms?|platino|paladio|paládio|platine",
+     r"платин|паллади", r"铂|钯|白金|プラチナ|パラジウム"),
+    ("ニオブ", r"niobium|niobio|nióbio", r"ниоби", r"铌|ニオブ"),
+    ("アンチモン", r"antimony|antimonio|antimônio|antimoine", r"сурьм", r"锑|アンチモン"),
+)
+
+_MINERAL_PATTERNS = tuple(
+    (name, re.compile(r"(?<!\w)(?:%s)(?!\w)|(?<!\w)(?:%s)|%s" % (latin, cyr, cjk),
+                      re.IGNORECASE | re.UNICODE))
+    for name, latin, cyr, cjk in _MINERAL_TERMS
+)
+
+
+def detect_minerals(*texts):
+    """見出し（原文・訳文）に明示された鉱物名を辞書で拾う。ALLOWED_MINERALS の順で返す。"""
+    text = " ".join(t for t in texts if isinstance(t, str))
+    if not text:
+        return []
+    found = [name for name, pat in _MINERAL_PATTERNS if pat.search(text)]
+    return found[:MAX_MINERALS]
+
+
+def merge_minerals(ai_value, *texts):
+    """AIの minerals（語彙内だけ）を先に、辞書で拾った分を後ろに足す（union、最大 MAX_MINERALS）。"""
+    return normalize_minerals(normalize_minerals(ai_value) + detect_minerals(*texts))
 
 
 def normalize_one(article, raw):
@@ -510,6 +592,7 @@ def normalize_one(article, raw):
         "key_phrase_original": key_original,
         "key_phrase_ja": key_ja,
         "enriched_by": BY_GEMINI,
+        "minerals": merge_minerals(raw.get("minerals"), title_original, title_ja),
     }
 
 
@@ -534,8 +617,15 @@ SYSTEM_RULES = """あなたは報道見出しの翻訳・分類を行う。入�
      「可能性が高い」「予想される」「期待される」など断定できない言い方。
    - 見出しが短く事実を2文にできない場合は1文でよい。事実が読み取れなければ空文字 "" にする。
      推測で埋めてはならない。
-3. tags: 次の12語からのみ1〜3個選ぶ。この12語以外は絶対に出力しない。
-   政治, 経済, 安全保障, 外交, 気候, 人権, 科学技術, 保健, 社会, 文化, スポーツ, 災害
+3. tags: 次の18語からのみ1〜3個選ぶ。この18語以外は絶対に出力しない。表記も一字一句このとおりにする。
+   政治=政権・議会・政党・法案 / 経済=景気・金融・企業・市場 /
+   安全保障=防衛政策・同盟・テロ対策（戦闘そのものは 紛争・軍事） / 外交=首脳会談・国家間交渉・制裁 /
+   気候=気候変動・環境 / 人権=人権・報道の自由・差別 / 科学技術=研究・IT・宇宙 /
+   保健=医療・感染症 / 社会=事件・教育・生活 / 文化=芸術・宗教・娯楽 / スポーツ /
+   災害=地震・洪水・事故 / エネルギー=石油・ガス・電力・原子力 /
+   資源・鉱物=鉱山・金属資源・レアメタル / 貿易・関税=輸出入・関税・輸出規制 /
+   紛争・軍事=戦闘・軍事行動・兵器・停戦 / 選挙=投票・選挙戦・開票 /
+   移民・難民=移民政策・難民・国境管理
 4. stance: この媒体が扱う対象に対する立場。support（支持・擁護） / critical（批判・非難） /
    neutral（中立・事実報道）のいずれか1語。判断できない場合は必ず neutral。
 5. stance_reason: stance の根拠を日本語1文で書く。見出しの語を根拠に挙げる。
@@ -544,10 +634,15 @@ SYSTEM_RULES = """あなたは報道見出しの翻訳・分類を行う。入�
    同じ出来事を国ごとにどう呼んでいるかを並べて比較するために使うので、
    ここを日本語にすると比較ができなくなる。
 7. key_phrase_ja: key_phrase_original の日本語訳。
+8. minerals: 見出し・要約にその鉱物が明示的に関係する場合のみ、次の語彙から最大4個。
+   無ければ空配列 []。「鉱業」「電池」だけで鉱物名が出てこない場合は推測して付けない。
+   リチウム, コバルト, ニッケル, レアアース, グラファイト, ガリウム, ゲルマニウム, タングステン,
+   マンガン, 白金族（プラチナ・パラジウム等）, ニオブ, アンチモン
 
 出力は JSON オブジェクトのみ。前後に説明文やコードフェンスを付けない。形式:
 {"results":[{"id":"<入力のid>","title_ja":"...","summary_ja":"...","tags":["..."],
-"stance":"neutral","stance_reason":"...","key_phrase_original":"...","key_phrase_ja":"..."}]}
+"stance":"neutral","stance_reason":"...","key_phrase_original":"...","key_phrase_ja":"...",
+"minerals":[]}]}
 入力の記事すべてについて、入力と同じ id を付けて1件ずつ返す。"""
 
 
@@ -584,7 +679,8 @@ def build_request_body(batch, model=None):
     model = model or MODEL
     config = {
         "responseMimeType": "application/json",
-        "maxOutputTokens": 8192,
+        # 25件×（訳・要約・根拠・語句）で約8千〜1万2千トークン。途中で切れると全件パース失敗になるので余裕を持たせる。
+        "maxOutputTokens": 16384,
     }
     if not is_gemini3(model):
         config["temperature"] = 0
@@ -1109,7 +1205,8 @@ def reusable_previous(previous, articles):
             continue
         if art.get("enriched_by") != BY_GEMINI:
             continue
-        if not all(k in art for k in ARTICLE_FIELDS):
+        # minerals は後から足した欄。足す前に書かれたファイルも再利用できるよう必須にしない。
+        if not all(k in art for k in ARTICLE_FIELDS if k != "minerals"):
             continue
         by_id[art.get("article_id")] = art
     out = {}
@@ -1121,7 +1218,10 @@ def reusable_previous(previous, articles):
         title = a.get("title_original") or ""
         if phrase and phrase not in title:
             continue
-        out[a["article_id"]] = dict((k, old[k]) for k in ARTICLE_FIELDS)
+        reused = dict((k, old[k]) for k in ARTICLE_FIELDS if k != "minerals")
+        # 辞書は改良されうるので毎回かけ直して union（前回のAI結果は残す）。
+        reused["minerals"] = merge_minerals(old.get("minerals"), title, old.get("title_ja"))
+        out[a["article_id"]] = reused
     return out
 
 
@@ -1338,6 +1438,12 @@ def main(argv=None):
         # （AIの失敗とは違う。AIの失敗では0を返して degraded で続ける。）
         print("結果: 失敗（入力 %s が読めません。①収集を先に実行してください）" % in_path)
         return 1
+
+    # 前回結果の再利用前の全件で見積もる（再利用があれば実際はこれより少ない）。
+    n_articles = len(valid_articles(day_payload))
+    print("  推定リクエスト数: %d本（記事 %d件、1バッチ%d件・最大%dバッチ。再送・再挑戦は別）"
+          % (estimate_requests(n_articles, args.batch_size, MAX_BATCHES),
+             n_articles, args.batch_size, MAX_BATCHES))
 
     # 同じ日の前回出力（1日2回走るうちの1回目など）。AI適用済みの記事は再送しない。
     previous = None if args.fresh else load_json(out_path)
