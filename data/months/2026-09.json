@@ -69,12 +69,34 @@
     },
     "2026-09-26": {
       "status": "ok",
-      "articles": 3163,
+      "articles": 4503,
       "countries": 33,
-      "feeds_ok": 107,
+      "feeds_ok": 104,
       "feeds_total": 113,
-      "generated_at": "2026-09-25T15:55:01Z",
+      "generated_at": "2026-09-26T00:33:22Z",
       "alerts": [
+        {
+          "feed_id": "ae-gulfnews",
+          "source": "Gulf News",
+          "country": "AE",
+          "status": "empty",
+          "error": null,
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 2,
+          "note": "接続はできましたが記事が0件でした（配信形式の変更が疑われます）"
+        },
+        {
+          "feed_id": "ae-khaleejtimes",
+          "source": "Khaleej Times",
+          "country": "AE",
+          "status": "empty",
+          "error": null,
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 2,
+          "note": "接続はできましたが記事が0件でした（配信形式の変更が疑われます）"
+        },
         {
           "feed_id": "cl-elsiglo",
           "source": "El Siglo",
@@ -87,15 +109,15 @@
           "note": "取得失敗・今回の取得対象外: URLError: <urlopen error timed out>"
         },
         {
-          "feed_id": "et-reporter",
-          "source": "The Reporter Ethiopia",
-          "country": "ET",
-          "status": "failed",
-          "error": "HTTPError: HTTP Error 202: unexpected status",
-          "latest_published_at": null,
-          "stale_days": null,
+          "feed_id": "eg-almasry",
+          "source": "Al-Masry Al-Youm",
+          "country": "EG",
+          "status": "stale",
+          "error": null,
+          "latest_published_at": "2021-01-15T10:57:43Z",
+          "stale_days": 2079.6,
           "threshold_days": 3,
-          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 202: unexpected status"
+          "note": "最新記事が2079.6日前で、閾値3日を超えています（件数は40件あるため接続自体は成功しています）"
         },
         {
           "feed_id": "id-cnnindonesia",
@@ -131,6 +153,17 @@
           "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 403: Forbidden"
         },
         {
+          "feed_id": "ng-nan-b",
+          "source": "News Agency of Nigeria (NAN)",
+          "country": "NG",
+          "status": "failed",
+          "error": "HTTPError: HTTP Error 403: Forbidden",
+          "latest_published_at": null,
+          "stale_days": null,
+          "threshold_days": 3,
+          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
           "feed_id": "ve-ultimasnoticias",
           "source": "Últimas Noticias",
           "country": "VE",
@@ -144,5 +177,5 @@
       ]
     }
   },
-  "updated_at": "2026-09-25T16:01:32Z"
+  "updated_at": "2026-09-26T00:39:20Z"
 }
