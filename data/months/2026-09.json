@@ -69,11 +69,11 @@
     },
     "2026-09-26": {
       "status": "ok",
-      "articles": 5238,
+      "articles": 6551,
       "countries": 33,
-      "feeds_ok": 107,
+      "feeds_ok": 108,
       "feeds_total": 113,
-      "generated_at": "2026-09-26T06:05:13Z",
+      "generated_at": "2026-09-26T14:32:45Z",
       "alerts": [
         {
           "feed_id": "cl-elsiglo",
@@ -91,11 +91,11 @@
           "source": "The Reporter Ethiopia",
           "country": "ET",
           "status": "failed",
-          "error": "HTTPError: HTTP Error 202: unexpected status",
+          "error": "HTTPError: HTTP Error 304: Not Modified",
           "latest_published_at": null,
           "stale_days": null,
           "threshold_days": 3,
-          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 202: unexpected status"
+          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 304: Not Modified"
         },
         {
           "feed_id": "id-cnnindonesia",
@@ -129,20 +129,9 @@
           "stale_days": null,
           "threshold_days": 3,
           "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "feed_id": "ve-ultimasnoticias",
-          "source": "Últimas Noticias",
-          "country": "VE",
-          "status": "failed",
-          "error": "HTTPError: HTTP Error 202: unexpected status",
-          "latest_published_at": null,
-          "stale_days": null,
-          "threshold_days": 3,
-          "note": "取得失敗・今回の取得対象外: HTTPError: HTTP Error 202: unexpected status"
         }
       ]
     }
   },
-  "updated_at": "2026-09-26T06:11:29Z"
+  "updated_at": "2026-09-26T14:38:43Z"
 }
