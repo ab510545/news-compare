@@ -101,6 +101,12 @@ jobs:
         continue-on-error: true
         run: python3 scripts/fetch.py
 
+      # If fetch could not create a day document, preserve an explicit failed
+      # day with every enabled feed represented before continuing the pipeline.
+      - name: ①収集失敗をデータに記録
+        if: steps.fetch.outcome == 'failure'
+        run: python3 scripts/record_failure.py --date "$(TZ=Asia/Tokyo date +%F)"
+
       # ----------------------------------------------------------------------
       # 4. ②AI付与：日本語訳・要約・タグ・論調をつける
       #
@@ -131,6 +137,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODELS: ${{ vars.GEMINI_MODELS }}
         run: python3 scripts/enrich.py
+
 
       # ----------------------------------------------------------------------
       # 5. ③クラスタ：同じ話題を束ねて採点する
